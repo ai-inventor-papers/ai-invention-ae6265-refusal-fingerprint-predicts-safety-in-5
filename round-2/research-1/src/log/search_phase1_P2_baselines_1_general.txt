@@ -1,0 +1,39 @@
+QUERY: unrestricted alignment maps randomly initialized models causal abstraction
+MODE: general
+TIME: 2026-09-19 04:33:01
+
+Search: unrestricted alignment maps randomly initialized models causal abstraction  [general via ddgs]
+Found: 8 results
+
+1. The Non-Linear Representation Dilemma: Is Causal Abstraction Enough for Mechanistic Interpretability? | alphaXiv
+   https://www.alphaxiv.org/abs/2507.08802
+   November 12, 2025 - In particular, we prove that under reasonable assumptions, any neural network can be mapped to any algorithm, rendering this unrestricted notion of causal abstraction trivial and u...
+
+2. [2507.08802] The Non-Linear Representation Dilemma: Is Causal Abstraction Enough for Mechanistic Interpretability?
+   https://arxiv.org/abs/2507.08802
+   November 12, 2025 - In particular, we prove that under reasonable assumptions, any neural network can be mapped to any algorithm, rendering this unrestricted notion of causal abstraction trivial and u...
+
+3. [Paper Note] The Non-Linear Representation Dilemma: Is Causal Abstraction Enough for Mechanistic Interpretability?
+   https://en.papernotes.org/NeurIPS2025/interpretability/the_non-linear_representation_dilemma_is_causal_abstraction_enough_for_mechanist/
+   May 8, 2026 - Core finding: The non-linear alignment maps achieve 100% IIA on the randomly initialized model. This means that a network with no language understanding and no ability to perform IOI "pe...
+
+4. Is Causal Abstraction Enough for Mechanistic Interpretability?
+   https://arxiv.org/pdf/2507.08802
+   for randomly initialised models in the indirect object identification (IOI) task (Wang et al., 2023); notably, as training progresses, the complexity of the alignment maps needed to achieve perfect II...
+
+5. Abstraction, Causality, and Embedded Maps: Here Be ...
+   https://www.alignmentforum.org/posts/ipCAL4tx7jcJsFasY/abstraction-causality-and-embedded-maps-here-be-monsters
+   December 18, 2019 - If we picture the whole thing as a causal DAG, the abstract DAG (Navier-Stokes) is basically just a glommed-together version of the ground DAG (particle interactions), with some in...
+
+6. Aligning Graphical and Functional Causal Abstractions
+   https://arxiv.org/html/2412.17080v1
+   December 22, 2024 - We can express the relation between a low-level (or base) model and a high-level (or abstracted) model through a causal abstraction map. In order to dynamically switch between mode...
+
+7. Examples of Causal Abstraction — AI Alignment Forum
+   https://www.alignmentforum.org/posts/Expvyb6nndbjqigRL/examples-of-causal-abstraction
+   December 12, 2019 - These are mainly focused on causal abstraction, in which both the concrete and abstract model are causal DAGs with some natural correspondence between counterfactuals on the two....
+
+8. Finding Alignments Between InterpretableCausal Variables and Distributed Neural Representations
+   https://arxiv.org/html/2303.02536v4
+   This network solves the boolean conjunction problem perfectly in that all pairs of input boolean values are mapped to the intended output. ... \mathbf{x} and the causal mechanisms of the model determi...
+

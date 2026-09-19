@@ -1,0 +1,39 @@
+QUERY: activation patching reference conditions zero mean random ablation
+MODE: general
+TIME: 2026-09-19 04:33:17
+
+Search: activation patching reference conditions zero mean random ablation  [general via ddgs]
+Found: 8 results
+
+1. How to use and interpret activation patching
+   https://arxiv.org/html/2404.15255v1
+   March 9, 2026 - This metric can incorrectly pick up on components that just contribute to many logits. Ensuring that the residual stream and logits have mean zero (default in TransformerLens) can help...
+
+2. How to use and interpret activation patching Stefan Heimersheim
+   https://arxiv.org/pdf/2404.15255
+   Ensuring that the residual stream and logits have mean zero (default in TransformerLens) ... In most situations, use activation patching instead of ablations....
+
+3. How to Think About Activation Patching
+   https://www.alignmentforum.org/posts/xh85KbTFhbCz7taD4/how-to-think-about-activation-patching
+   In the circuit A OR B, resample ablating does nothing. But in A AND B it tells us that each of A or B being removed will totally kill performance. Note that this naturally extends to thinking of corru...
+
+4. Attribution Patching: Activation Patching At Industrial Scale — Neel Nanda
+   https://www.neelnanda.io/mechanistic-interpretability/attribution-patching
+   March 16, 2023 - In the circuit A OR B, resample ablating does nothing. But in A AND B it tells us that each of A or B being removed will totally kill performance. Note that this naturally extends to ...
+
+5. How to use and interpret activation patching · Pith
+   https://pith.science/citations/b99c4234-c7d8-45fc-99bf-6b3b086e9c64
+   Zero-ablation overstates register content dependence in DINO ViTs because mean, noise, and cross-image shuffle replacements preserve performance while zeroing does not. Do I Know This Entity? Knowledg...
+
+6. An Interpretability Illusion for Activation Patching of ...
+   https://www.alignmentforum.org/posts/RFtkRXHebkwxygDe2/an-interpretability-illusion-for-activation-patching-of
+   The e3 feature has no variation over the data distribution (it’s always zero). Nevertheless, this neuron has a direct connection to the output, which makes it a causal but uncorrelated feature. We cal...
+
+7. Zero-Ablation Overstates Register Content Dependence in DINO Vision Transformers
+   https://arxiv.org/html/2604.14433v1
+   April 15, 2026 - Zero-ablation conflates removing a component’s contribution with pushing activations off-distribution [24], a concern that parallels the reference-point problem in attribution methods...
+
+8. Optimal ablation for interpretability Maximilian Li Harvard University
+   https://arxiv.org/pdf/2409.09951
+   M to lower ∆zero(M, A) for any component A, since part of the loss function involves minimizing · loss with a random subset of ablated components....
+

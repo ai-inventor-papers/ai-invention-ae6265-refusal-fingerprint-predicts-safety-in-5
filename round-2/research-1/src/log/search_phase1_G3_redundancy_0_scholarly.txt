@@ -1,0 +1,39 @@
+QUERY: participation ratio effective dimensionality refusal direction representation
+MODE: scholarly
+TIME: 2026-09-19 04:33:35
+
+Search: participation ratio effective dimensionality refusal direction representation  [scholarly via openalex]
+Found: 8 results
+
+1. National minorities and their representation in social surveys: which practices make a difference?
+   https://doi.org/10.1007/s11135-011-9591-1
+   Quality & Quantity · 2011 · cited by 61...
+
+2. The brain basis of emotion: A meta-analytic review
+   https://doi.org/10.1017/s0140525x11000446
+   Behavioral and Brain Sciences · 2012 · cited by 2367...
+
+3. The Origins of Human Rights Regimes: Democratic Delegation in Postwar Europe
+   https://doi.org/10.1162/002081800551163
+   International Organization · 2000 · cited by 1443...
+
+4. Classifying Students With School Refusal Behavior and Their Relationship to Learning Strategies
+   https://doi.org/10.3389/feduc.2021.752199
+   Frontiers in Education · 2021 · cited by 12...
+
+5. Indigenous Data Sovereignty
+   https://doi.org/10.22459/caepr38.11.2016
+   ANU Press eBooks · 2016 · cited by 663...
+
+6. Personality and Participation: Who Volunteers to Participate in Studies
+   https://doi.org/10.4236/psych.2014.53034
+   Psychology · 2014 · cited by 15...
+
+7. Academic Ableism
+   https://doi.org/10.3998/mpub.9708722
+   University of Michigan Press eBooks · 2017 · cited by 848...
+
+8. Measuring and Explaining Management Practices Across Firms and Countries
+   https://doi.org/10.3386/w12216
+   National Bureau of Economic Research · 2006 · cited by 1468...
+

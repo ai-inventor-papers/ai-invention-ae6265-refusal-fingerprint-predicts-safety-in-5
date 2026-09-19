@@ -1,0 +1,39 @@
+QUERY: model lineage fine-tuning detection activation signatures
+MODE: scholarly
+TIME: 2026-09-19 04:33:11
+
+Search: model lineage fine-tuning detection activation signatures  [scholarly via openalex]
+Found: 8 results
+
+1. An immune-cell signature of bacterial sepsis
+   https://doi.org/10.1038/s41591-020-0752-4
+   Nature Medicine · 2020 · cited by 540...
+
+2. TrackMate: An open and extensible platform for single-particle tracking
+   https://doi.org/10.1016/j.ymeth.2016.09.016
+   Methods · 2016 · cited by 3869...
+
+3. Consensus guidelines for the definition, detection and interpretation of immunogenic cell death
+   https://doi.org/10.1136/jitc-2019-000337
+   Journal for ImmunoTherapy of Cancer · 2020 · cited by 1111...
+
+4. Discovery of functional elements in 12 Drosophila genomes using evolutionary signatures
+   https://doi.org/10.1038/nature06340
+   Nature · 2007 · cited by 647...
+
+5. Transfer learning enables predictions in network biology
+   https://doi.org/10.1038/s41586-023-06139-9
+   Nature · 2023 · cited by 1194...
+
+6. Three-Dimensional in Vitro Cell Culture Models in Drug Discovery and Drug Repositioning
+   https://doi.org/10.3389/fphar.2018.00006
+   Frontiers in Pharmacology · 2018 · cited by 1572...
+
+7. Single-cell transcriptomics–based MacSpectrum reveals macrophage activation signatures in diseases
+   https://doi.org/10.1172/jci.insight.126453
+   JCI Insight · 2019 · cited by 152...
+
+8. Evolution Acts on Enhancer Organization to Fine-Tune Gradient Threshold Readouts
+   https://doi.org/10.1371/journal.pbio.0060263
+   PLoS Biology · 2008 · cited by 97...
+

@@ -1,0 +1,13 @@
+[04:32:54] G4_classid[0] 'identify safety-tuned model activations base instruct abliterated' -> log/search_phase1_G4_classid_0_scholarly.txt
+[04:32:59] G4_classid[1] 'distinguish abliterated checkpoint alignment provenance' -> log/search_phase1_G4_classid_1_scholarly.txt
+[04:33:04] G4_classid[2] 'detect alignment fine-tuning from activations classifier' -> log/search_phase1_G4_classid_2_scholarly.txt
+[04:33:10] G4_classid[3] 'model lineage fine-tuning detection activation signatures' -> log/search_phase1_G4_classid_3_scholarly.txt
+[04:33:15] G5_kscaling[0] 'number of contrastive pairs direction estimate error scaling' -> log/search_phase1_G5_kscaling_0_scholarly.txt
+[04:33:21] G5_kscaling[1] 'sample complexity representation direction estimation language model' -> log/search_phase1_G5_kscaling_1_scholarly.txt
+[04:33:26] G5_kscaling[2] 'stability refusal direction few examples contrast pairs' -> log/search_phase1_G5_kscaling_2_scholarly.txt
+[04:33:32] G5_kscaling[3] 'steering vector number of examples scaling law' -> log/search_phase1_G5_kscaling_3_scholarly.txt
+[04:33:37] G6_dose[0] 'partial ablation refusal direction alpha sweep abliteration' -> log/search_phase1_G6_dose_0_scholarly.txt
+[04:33:42] G6_dose[1] 'intervention strength sweep latent vulnerability refusal' -> log/search_phase1_G6_dose_1_scholarly.txt
+[04:33:47] G6_dose[2] 'abliteration dose response refusal rate strength' -> log/search_phase1_G6_dose_2_scholarly.txt
+[04:33:52] G6_dose[3] 'refusal direction removal strength effect sharpness' -> log/search_phase1_G6_dose_3_scholarly.txt
+DONE

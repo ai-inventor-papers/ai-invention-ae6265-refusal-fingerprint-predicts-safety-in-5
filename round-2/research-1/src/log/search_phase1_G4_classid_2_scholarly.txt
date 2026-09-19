@@ -1,0 +1,39 @@
+QUERY: detect alignment fine-tuning from activations classifier
+MODE: scholarly
+TIME: 2026-09-19 04:33:06
+
+Search: detect alignment fine-tuning from activations classifier  [scholarly via openalex]
+Found: 8 results
+
+1. Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization
+   https://doi.org/10.1007/s11263-019-01228-7
+   International Journal of Computer Vision · 2019 · cited by 6029...
+
+2. Training language models to follow instructions with human feedback
+   https://doi.org/10.48550/arxiv.2203.02155
+   arXiv (Cornell University) · 2022 · cited by 4350...
+
+3. Universal Language Model Fine-tuning for Text Classification
+   https://doi.org/10.18653/v1/p18-1031
+   2018 · cited by 341...
+
+4. ICA-AROMA: A robust ICA-based strategy for removing motion artifacts from fMRI data
+   https://doi.org/10.1016/j.neuroimage.2015.02.064
+   NeuroImage · 2015 · cited by 1904...
+
+5. A survey on deep learning in medical image analysis
+   https://doi.org/10.1016/j.media.2017.07.005
+   Medical Image Analysis · 2017 · cited by 15243...
+
+6. LXMERT: Learning Cross-Modality Encoder Representations from Transformers
+   https://doi.org/10.18653/v1/d19-1514
+   2019 · cited by 2345...
+
+7. Deep Learning in Medical Image Analysis
+   https://doi.org/10.1146/annurev-bioeng-071516-044442
+   Annual Review of Biomedical Engineering · 2017 · cited by 4938...
+
+8. Intelligent Image-Activated Cell Sorting
+   https://doi.org/10.1016/j.cell.2018.08.028
+   Cell · 2018 · cited by 550...
+

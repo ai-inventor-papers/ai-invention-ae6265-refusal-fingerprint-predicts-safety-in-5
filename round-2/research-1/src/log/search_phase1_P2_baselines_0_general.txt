@@ -1,0 +1,39 @@
+QUERY: randomly initialized transformers interpretability scores auto-interp
+MODE: general
+TIME: 2026-09-19 04:32:56
+
+Search: randomly initialized transformers interpretability scores auto-interp  [general via ddgs]
+Found: 8 results
+
+1. [2501.17727] Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers
+   https://arxiv.org/abs/2501.17727
+   January 27, 2026 - Over a wide range of Pythia model ... settings, SAEs trained on randomly initialized transformers produce auto-interpretability scores and reconstruction metrics that are similar to...
+
+2. Sparse Autoencoders Can Interpret Randomly Initialized Transformers
+   https://arxiv.org/html/2501.17727v1
+   In particular, we found that the latents learned by SAEs trained on transformers whose parameters are randomized have similar auto-interpretability scores (Bills et al., 2023; Paulo et al., 2024) to t...
+
+3. Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers | OpenReview
+   https://openreview.net/forum?id=USyGD0eUod
+   October 8, 2025 - from a Gaussian). Over a wide range of Pythia model sizes and multiple randomization schemes, we find that, in many settings, SAEs trained on randomly initialized transformers produc...
+
+4. [Paper Note] Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers
+   https://en.papernotes.org/ICLR2026/interpretability/automated_interpretability_metrics_do_not_distinguish_trained_and_random_transfo/
+   May 8, 2026 - Core Idea: Use randomly initialized Transformers as a null model for SAE evaluation, revealing the phenomenon that "automated interpretability scores cannot distinguish trained from rand...
+
+5. Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers | alphaXiv
+   https://www.alphaxiv.org/abs/2501.17727
+   January 27, 2026 - Over a wide range of Pythia model ... settings, SAEs trained on randomly initialized transformers produce auto-interpretability scores and reconstruction metrics that are similar to...
+
+6. Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers | ML Anthology
+   https://mlanthology.org/iclr/2026/heap2026iclr-automated/
+   Over a wide range of Pythia model sizes and multiple randomization schemes, we find that, in many settings, SAEs trained on randomly initialized transformers produce auto-interpretability scores and r...
+
+7. Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers
+   https://arxiv.org/html/2501.17727
+   Over a wide range of Pythia model sizes and multiple randomization schemes, we find that, in many settings, SAEs trained on randomly initialized transformers produce auto-interpretability scores and r...
+
+8. Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers — Lacuna
+   https://lacuna.tiptreesystems.com/work/automated-interpretability-metrics-do-not-distinguish-trained-and-random/wrk_4df34de51a33f7e582def2db404f9322
+   Furthermore, the "auto-interp" pipeline itself relies on an LLM (Llama-3.1) which may have its own biases in how it "hallucinates" meaning into random patterns. The paper concludes with a strong recom...
+

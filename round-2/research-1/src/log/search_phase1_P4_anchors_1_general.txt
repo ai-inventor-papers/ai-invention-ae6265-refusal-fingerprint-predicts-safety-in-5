@@ -1,0 +1,39 @@
+QUERY: AIR-Bench safety benchmark 2024
+MODE: general
+TIME: 2026-09-19 04:33:28
+
+Search: AIR-Bench safety benchmark 2024  [general via ddgs]
+Found: 8 results
+
+1. [2407.17436] AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies
+   https://arxiv.org/abs/2407.17436
+   August 5, 2024 - To bridge this gap, we introduce AIR-Bench 2024, the first AI safety benchmark aligned with emerging government regulations and company policies, following the regulation-based safety...
+
+2. GitHub - stanford-crfm/air-bench-2024: AIR-Bench 2024 is a safety benchmark that aligns with emerging government regulations and company policies · GitHub
+   https://github.com/stanford-crfm/air-bench-2024
+   [arXiv] [Project Page (HELM)] [Dataset] **AIR-Bench 2024** is the first AI safety benchmark aligned with emerging government regulations and company policies, following the regulation-based safety cat...
+
+3. AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies \faWarning This paper contains model outputs that can be offensive in nature.
+   https://arxiv.org/html/2407.17436v2
+   August 5, 2024 - This gap limits the real-world ... critical gap, we introduce AIR-Bench 2024, a comprehensive language model (LM) safety benchmark consisting of 5,694 risky instruction prompts direct...
+
+4. [2407.17436v2] AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies
+   https://arxiv.org/abs/2407.17436v2
+   August 5, 2024 - To bridge this gap, we introduce AIR-Bench 2024, the first AI safety benchmark aligned with emerging government regulations and company policies, following the regulation-based safety...
+
+5. dblp: AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies.
+   https://dblp.org/rec/journals/corr/abs-2407-17436.html
+   March 19, 2026 - Yi Zeng, Yu Yang, Andy Zhou, Jeffrey Ziwei Tan, Yuheng Tu, Yifan Mai, Kevin Klyman, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, Bo Li: AIR-Bench 2024: A Safety Benchmark Based on ...
+
+6. (PDF) AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies
+   https://www.researchgate.net/publication/390062930_AIR-Bench_2024_A_Safety_Benchmark_Based_on_Risk_Categories_from_Regulations_and_Policies
+   September 23, 2024 - By · aligning with the comprehensive risk categories speciﬁed in real-world regulations and policies, AIR-BENCH 202 4 aims to provide a more extensive and pertinent evaluation too...
+
+7. AIR-BENCH 2024: A SAFETY BENCHMARK BASED ON
+   https://openreview.net/pdf/70c6738864462f5561aaafcb9437c4cd2381c7f7.pdf
+   benchmarks often define safety ... com- pare FMs across these benchmarks. To bridge this gap, we introduce AIR-BENCH · 2024, the first AI safety benchmark for language models aligned with emerging......
+
+8. AIR-Bench - Holistic Evaluation of Language Models (HELM)
+   https://crfm.stanford.edu/helm/air-bench/latest/
+   We introduce AIR-Bench 2024, the ... in our AI Risks study, AIR 2024. AIR 2024 decomposes 8 government regulations and 16 company policies into a four-tiered safety taxonomy with 314 granular risk cat...
+

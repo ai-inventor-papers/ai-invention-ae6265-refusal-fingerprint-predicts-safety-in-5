@@ -1,0 +1,39 @@
+QUERY: effective rank refusal direction hidden states
+MODE: scholarly
+TIME: 2026-09-19 04:33:45
+
+Search: effective rank refusal direction hidden states  [scholarly via openalex]
+Found: 8 results
+
+1. Mind the Gap: Why do people act environmentally and what are the barriers to pro-environmental behavior?
+   https://doi.org/10.1080/13504620220145401
+   Environmental Education Research · 2002 · cited by 8770...
+
+2. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+3. The Hidden Politics of Administrative Reform: Cutting French Civil Service Wages with a Low‐Profile Instrument
+   https://doi.org/10.1111/j.1468-0491.2007.00343.x
+   Governance · 2007 · cited by 58...
+
+4. Measuring effective democracy: A defense
+   https://doi.org/10.1177/0192512111414682
+   International Political Science Review · 2011 · cited by 67...
+
+5. The Disinformation Age: Politics, Technology, and Disruptive Communication in the United States
+   https://doi.org/10.1017/9781108914628
+   Aquila Digital Community (University of Southern Mississippi) · 2021 · cited by 99...
+
+6. Consent’s Revenge
+   https://doi.org/10.14506/ca31.3.02
+   Cultural Anthropology · 2016 · cited by 316...
+
+7. Media capture strategies in new authoritarian states: the case of Turkey
+   https://doi.org/10.1007/s11616-020-00600-9
+   Publizistik · 2020 · cited by 70...
+
+8. Otto Rank: Pioneering Ideas for Social Work Theory and Practice
+   https://doi.org/10.1080/15228878.2010.512535
+   Psychoanalytic Social Work · 2010 · cited by 33...
+

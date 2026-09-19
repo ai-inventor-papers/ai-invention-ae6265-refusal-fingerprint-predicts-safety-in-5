@@ -1,0 +1,39 @@
+QUERY: refusal onset first token position hidden states LLM
+MODE: scholarly
+TIME: 2026-09-19 04:33:14
+
+Search: refusal onset first token position hidden states LLM  [scholarly via openalex]
+Found: 8 results
+
+1. Potential merits and flaws of large language models in epilepsy care: A critical review
+   https://doi.org/10.1111/epi.17907
+   Epilepsia · 2024 · cited by 17...
+
+2. Large Language Model Safety: A Holistic Survey
+   https://doi.org/10.48550/arxiv.2412.17686
+   arXiv (Cornell University) · 2024 · cited by 3...
+
+3. Playing with the dials of belief: how controllable AI behaviours could modulate human belief and cognition across scales
+   https://doi.org/10.1007/s00146-026-03283-4
+   AI & Society · 2026 · cited by 2...
+
+4. African ministers and the emergence of resistance to colonial domination : the development of indigenous clergy in the Wesleyan Methodist Church in Zimbabwe from 1891 to 1980.
+   https://openalex.org/W2097514985
+   ResearchSpace (University of KwaZulu-Natal) · 2011 · cited by 14...
+
+5. Agogic: Performance-Timed Music Tokens for LLM-Native Text-to-Symbolic-Music Generation
+   https://openalex.org/W7197053583
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+6. Making Sense of Large Social Media Corpora
+   https://doi.org/10.1007/978-3-031-52719-7
+   2024 · cited by 6...
+
+7. Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak
+   https://openalex.org/W7169688333
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+8. Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures
+   https://openalex.org/W7162893407
+   arXiv (Cornell University) · 2026 · cited by 0...
+

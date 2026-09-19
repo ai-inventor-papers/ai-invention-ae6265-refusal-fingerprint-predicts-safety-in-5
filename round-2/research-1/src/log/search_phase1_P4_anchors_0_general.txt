@@ -1,0 +1,39 @@
+QUERY: RefusalBench refusal rates benchmark 2026
+MODE: general
+TIME: 2026-09-19 04:33:22
+
+Search: RefusalBench refusal rates benchmark 2026  [general via ddgs]
+Found: 8 results
+
+1. [2605.21545] RefusalBench: Why Refusal Rate Misranks Frontier LLMs on Biological Research Prompts
+   https://arxiv.org/abs/2605.21545
+   May 20, 2026 - A 15-prompt should-refuse positive-control module establishes per-model calibration floors; three models fail to refuse even these prompts. Across 19 frontier models in the May 2026 sna...
+
+2. RefusalBench: Why Refusal Rate Misranks Frontier LLMs on Biological Research Prompts · Pith
+   https://pith.science/paper/2605.21545
+   May 22, 2026 - Evaluating 19 frontier models from a May 2026 snapshot, it reports strict refusal rates from 0.1% to 94.6%, that provider identity predicts refusal (Anthropic OR = 21.03 with prompt-clu...
+
+3. RefusalBench Benchmark Scores & AI Model Leaderboard | BenchmarkList
+   https://benchmarklist.com/benchmarks/refusalbench/
+   June 28, 2026 - A 15-prompt should-refuse positive-control module establishes per-model calibration floors; three models fail to refuse even these prompts. Across 19 frontier models in the May 2026 sn...
+
+4. RefusalBench: LLM Refusal Misranking in Bio Research
+   https://www.emergentmind.com/papers/2605.21545
+   A 15-prompt should-refuse positive-control module establishes per-model calibration floors; three models fail to refuse even these prompts. Across 19 frontier models in the May 2026 snapshot, strict r...
+
+5. RefusalBench: Benchmarking AI Refusal Behavior
+   https://www.emergentmind.com/topics/refusalbench
+   August 29, 2025 - RefusalBench is a comprehensive evaluation suite that systematically benchmarks LLMs' ability to refuse harmful prompts while avoiding over-refusal of benign queries....
+
+6. [2510.10390] RefusalBench: Generative Evaluation of Selective Refusal in Grounded Language Models
+   https://arxiv.org/abs/2510.10390
+   October 12, 2025 - We find that selective refusal is a trainable, alignment-sensitive capability, offering a clear path for improvement. We release two benchmarks -- RefusalBench-NQ (single document) ...
+
+7. BioSecBench-Refusal
+   https://latch.bio/biosecbench-refusal
+   July 1, 2026 - The benchmark pairs 61 Routine ... a biosecurity hazard. Across 16 model-harness configurations, refusal rates ranged from 7% to 74% on · Routine tasks and 1% to 62% on Red-Team tasks, ...
+
+8. RefusalBench: Generative Evaluation of Selective Refusal ...
+   https://aclanthology.org/2026.eacl-long.321.pdf
+   Refusal Accuracy of frontier models on both benchmarks. No model achieves excellence (>80%) on both · dimensions simultaneously. Left: RefusalBench-NQ. Right: RefusalBench-GaRAGe. ... Figure 6: Refusa...
+

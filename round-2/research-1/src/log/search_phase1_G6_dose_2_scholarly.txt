@@ -1,0 +1,11 @@
+QUERY: abliteration dose response refusal rate strength
+MODE: scholarly
+TIME: 2026-09-19 04:33:48
+
+Search: abliteration dose response refusal rate strength  [scholarly via openalex]
+Found: 1 results
+
+1. Fool's Gold: Defensive Deception Against Safety-Removal Attacks on Open-Weight Models
+   https://doi.org/10.48550/arxiv.2608.17202
+   arXiv (Cornell University) · 2026 · cited by 0...
+

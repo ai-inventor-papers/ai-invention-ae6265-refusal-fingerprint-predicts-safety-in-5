@@ -1,0 +1,39 @@
+QUERY: earliest layer refusal direction emerges language model layers
+MODE: scholarly
+TIME: 2026-09-19 04:33:19
+
+Search: earliest layer refusal direction emerges language model layers  [scholarly via openalex]
+Found: 8 results
+
+1. Indigenous language and social identity : papers in honour of Michael Walsh
+   https://doi.org/10.15144/pl-626
+   ANU Open Research (Australian National University) · 2010 · cited by 146...
+
+2. Language Evolution: The View from Restricted Linguistic Systems
+   https://openalex.org/W2114657252
+   Utrecht University Repository (Utrecht University) · 2008 · cited by 95...
+
+3. Art in the Anthropocene: Encounters Among Aesthetics, Politics, Environments and Epistemologies
+   https://doi.org/10.26530/oapen_560010
+   Open Humanities Press eBooks · 2015 · cited by 627...
+
+4. Survey of Vulnerabilities in Large Language Models Revealed by Adversarial Attacks
+   https://doi.org/10.48550/arxiv.2310.10844
+   arXiv (Cornell University) · 2023 · cited by 37...
+
+5. The Politics of Written Language in the Arab World
+   https://doi.org/10.1163/9789004346178
+   2017 · cited by 84...
+
+6. Inventing Womanhood: Gender and Language in Later Middle English Writing
+   https://openalex.org/W625955569
+   The Knowledge Bank (The Ohio State University) · 2011 · cited by 96...
+
+7. Intelligent Contactless Gesture Recognition Using WLAN Physical Layer Information
+   https://doi.org/10.1109/access.2019.2927644
+   IEEE Access · 2019 · cited by 19...
+
+8. The Politics of Written Language in the Arab World, Writing Change
+   https://doi.org/10.1163/9789004346178
+   2017 · cited by 67...
+

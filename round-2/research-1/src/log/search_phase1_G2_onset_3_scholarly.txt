@@ -1,0 +1,39 @@
+QUERY: when refusal is computed before generation first response token
+MODE: scholarly
+TIME: 2026-09-19 04:33:30
+
+Search: when refusal is computed before generation first response token  [scholarly via openalex]
+Found: 8 results
+
+1. BNAI, NO-TOKEN, and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence
+   https://doi.org/10.48550/arxiv.2201.11903
+   arXiv (Cornell University) · 2022 · cited by 4331...
+
+2. Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context
+   https://doi.org/10.48550/arxiv.2403.05530
+   arXiv (Cornell University) · 2024 · cited by 297...
+
+3. Guidelines on security and privacy in public cloud computing
+   https://doi.org/10.6028/nist.sp.800-144
+   2011 · cited by 694...
+
+4. Structural Equation Modeling and Regression: Guidelines for Research Practice
+   https://doi.org/10.17705/1cais.00407
+   Communications of the Association for Information Systems · 2000 · cited by 6417...
+
+5. Training language models to follow instructions with human feedback
+   https://doi.org/10.48550/arxiv.2203.02155
+   arXiv (Cornell University) · 2022 · cited by 4350...
+
+6. Detecting hallucinations in large language models using semantic entropy
+   https://doi.org/10.1038/s41586-024-07421-0
+   Nature · 2024 · cited by 833...
+
+7. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+8. Retrieval augmented generation for large language models in healthcare: A systematic review
+   https://doi.org/10.1371/journal.pdig.0000877
+   PLOS Digital Health · 2025 · cited by 222...
+

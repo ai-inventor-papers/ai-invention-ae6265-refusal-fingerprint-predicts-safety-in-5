@@ -1,0 +1,39 @@
+QUERY: refusal direction layer norm base instruct comparison
+MODE: scholarly
+TIME: 2026-09-19 04:33:09
+
+Search: refusal direction layer norm base instruct comparison  [scholarly via openalex]
+Found: 8 results
+
+1. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+2. Decentering intensive mothering: More fully accounting for race and class in motherhood norms
+   https://doi.org/10.1111/soc4.13095
+   Sociology Compass · 2023 · cited by 37...
+
+3. Twitter and Tear Gas. The Power and Fragility of Networked Protest
+   https://doi.org/10.25969/mediarep/14848
+   2017 · cited by 531...
+
+4. A mutualistic approach to morality: The evolution of fairness by partner choice
+   https://doi.org/10.1017/s0140525x11002202
+   Behavioral and Brain Sciences · 2013 · cited by 690...
+
+5. COMMODIFYING PERSONAL RIGHTS AND TRADING THE RIGHT TO DIVORCE: Damages for Refusal to Divorce and Equalizing the Women’s Power to Bargain
+   https://doi.org/10.5070/l3221026366
+   UCLA Women s Law Journal · 2015 · cited by 15...
+
+6. Academic Ableism
+   https://doi.org/10.3998/mpub.9708722
+   University of Michigan Press eBooks · 2017 · cited by 848...
+
+7. Using audiovisual material to teach refusals from a discursive perspective: a research-based proposal
+   https://doi.org/10.5209/cjes.81875
+   Estudios Ingleses de la Universidad Complutense · 2022 · cited by 3...
+
+8. The Palgrave Handbook of Political Norms in Southeast Asia
+   https://doi.org/10.1007/978-981-99-9655-1
+   2024 · cited by 9...
+

@@ -1,0 +1,39 @@
+QUERY: dimensionality refusal subspace safety representation multiple directions
+MODE: scholarly
+TIME: 2026-09-19 04:33:40
+
+Search: dimensionality refusal subspace safety representation multiple directions  [scholarly via openalex]
+Found: 8 results
+
+1. Mechanistic Interpretability for AI Safety -- A Review
+   https://doi.org/10.48550/arxiv.2404.14082
+   arXiv (Cornell University) · 2024 · cited by 31...
+
+2. The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions
+   https://doi.org/10.48550/arxiv.2502.09674
+   arXiv (Cornell University) · 2025 · cited by 1...
+
+3. External Invariants: A Cryptographic Trust Architecture for Institutional AI Inference
+   https://doi.org/10.48550/arxiv.2406.11717
+   arXiv (Cornell University) · 2024 · cited by 9...
+
+4. Refusal Behavior in Large Language Models: A Nonlinear Perspective
+   https://doi.org/10.48550/arxiv.2501.08145
+   arXiv (Cornell University) · 2025 · cited by 1...
+
+5. SAE-SSV: Supervised Steering in Sparse Representation Spaces for Reliable Control of Language Models
+   https://doi.org/10.18653/v1/2025.emnlp-main.112
+   2025 · cited by 2...
+
+6. Large Language Model Safety: A Holistic Survey
+   https://doi.org/10.48550/arxiv.2412.17686
+   arXiv (Cornell University) · 2024 · cited by 3...
+
+7. Differentiated Directional Intervention: A Framework for Evading LLM Safety Alignment
+   https://doi.org/10.1609/aaai.v40i44.41148
+   Proceedings of the AAAI Conference on Artificial Intelligence · 2026 · cited by 1...
+
+8. Fault Diagnosis of In-Wheel Motors Used in Electric Vehicles: State of the Art, Challenges, and Future Directions
+   https://doi.org/10.3390/machines13080711
+   Machines · 2025 · cited by 3...
+

@@ -1,0 +1,39 @@
+QUERY: number of contrastive pairs direction estimate error scaling
+MODE: scholarly
+TIME: 2026-09-19 04:33:17
+
+Search: number of contrastive pairs direction estimate error scaling  [scholarly via openalex]
+Found: 8 results
+
+1. Estimating mutual information
+   https://doi.org/10.1103/physreve.69.066138
+   Physical Review E · 2004 · cited by 4219...
+
+2. LAMMPS - a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales
+   https://doi.org/10.1016/j.cpc.2021.108171
+   Computer Physics Communications · 2021 · cited by 12514...
+
+3. Bayesian Test for Colocalisation between Pairs of Genetic Association Studies Using Summary Statistics
+   https://doi.org/10.1371/journal.pgen.1004383
+   PLoS Genetics · 2014 · cited by 4787...
+
+4. Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models
+   https://doi.org/10.3758/brm.40.3.879
+   Behavior Research Methods · 2008 · cited by 33777...
+
+5. Temperature increase reduces global yields of major crops in four independent estimates
+   https://doi.org/10.1073/pnas.1701762114
+   Proceedings of the National Academy of Sciences · 2017 · cited by 3327...
+
+6. Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences
+   https://doi.org/10.12688/f1000research.7563.1
+   F1000Research · 2015 · cited by 4465...
+
+7. Towards complete and error-free genome assemblies of all vertebrate species
+   https://doi.org/10.1038/s41586-021-03451-0
+   Nature · 2021 · cited by 3305...
+
+8. Gradient-based learning applied to document recognition
+   https://doi.org/10.1109/5.726791
+   Proceedings of the IEEE · 1998 · cited by 59691...
+

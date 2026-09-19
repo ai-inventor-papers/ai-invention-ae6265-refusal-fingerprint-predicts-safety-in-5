@@ -1,0 +1,39 @@
+QUERY: safety direction layer-wise norm across architectures
+MODE: scholarly
+TIME: 2026-09-19 04:33:04
+
+Search: safety direction layer-wise norm across architectures  [scholarly via openalex]
+Found: 8 results
+
+1. Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI
+   https://doi.org/10.1016/j.inffus.2019.12.012
+   Information Fusion · 2019 · cited by 9964...
+
+2. A Survey of Large Language Models
+   https://doi.org/10.1007/s11704-026-60308-3
+   Frontiers of Computer Science · 2026 · cited by 1547...
+
+3. ImageJ2: ImageJ for the next generation of scientific image data
+   https://doi.org/10.1186/s12859-017-1934-z
+   BMC Bioinformatics · 2017 · cited by 6335...
+
+4. A survey of safety and trustworthiness of deep neural networks: Verification, testing, adversarial attack and defence, and interpretability
+   https://doi.org/10.1016/j.cosrev.2020.100270
+   Computer Science Review · 2020 · cited by 524...
+
+5. A Comprehensive Review of Deep Learning: Architectures, Recent Advances, and Applications
+   https://doi.org/10.3390/info15120755
+   Information · 2024 · cited by 307...
+
+6. Deep Learning‐Based Crack Damage Detection Using Convolutional Neural Networks
+   https://doi.org/10.1111/mice.12263
+   Computer-Aided Civil and Infrastructure Engineering · 2017 · cited by 3257...
+
+7. Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy
+   https://doi.org/10.1016/j.ijinfomgt.2019.08.002
+   International Journal of Information Management · 2019 · cited by 4464...
+
+8. Explainable artificial intelligence: A survey of needs, techniques, applications, and future direction
+   https://doi.org/10.1016/j.neucom.2024.128111
+   Neurocomputing · 2024 · cited by 223...
+

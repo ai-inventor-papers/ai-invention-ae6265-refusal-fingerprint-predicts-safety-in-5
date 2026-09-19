@@ -1,0 +1,39 @@
+QUERY: sample complexity representation direction estimation language model
+MODE: scholarly
+TIME: 2026-09-19 04:33:22
+
+Search: sample complexity representation direction estimation language model  [scholarly via openalex]
+Found: 8 results
+
+1. Gradient-based learning applied to document recognition
+   https://doi.org/10.1109/5.726791
+   Proceedings of the IEEE · 1998 · cited by 59691...
+
+2. Stable and Efficient Multiple Smoothing Parameter Estimation for Generalized Additive Models
+   https://doi.org/10.1198/016214504000000980
+   Journal of the American Statistical Association · 2004 · cited by 2097...
+
+3. A Survey of Large Language Models
+   https://doi.org/10.1007/s11704-026-60308-3
+   Frontiers of Computer Science · 2026 · cited by 1547...
+
+4. Head-Driven Statistical Models for Natural Language Parsing
+   https://doi.org/10.1162/089120103322753356
+   Computational Linguistics · 2003 · cited by 1849...
+
+5. Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
+   https://doi.org/10.1145/3560815
+   ACM Computing Surveys · 2022 · cited by 3864...
+
+6. Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules
+   https://doi.org/10.1021/acscentsci.7b00572
+   ACS Central Science · 2018 · cited by 3193...
+
+7. Distributed Representations of Words and Phrases and their Compositionality
+   https://doi.org/10.48550/arxiv.1310.4546
+   arXiv (Cornell University) · 2013 · cited by 18034...
+
+8. Structural Equation Modeling and Regression: Guidelines for Research Practice
+   https://doi.org/10.17705/1cais.00407
+   Communications of the Association for Information Systems · 2000 · cited by 6417...
+

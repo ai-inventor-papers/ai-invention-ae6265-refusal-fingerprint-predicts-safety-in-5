@@ -1,0 +1,39 @@
+QUERY: random direction ablation refusal direction control
+MODE: general
+TIME: 2026-09-19 04:33:12
+
+Search: random direction ablation refusal direction control  [general via ddgs]
+Found: 8 results
+
+1. Refusal in LLMs is mediated by a single direction
+   https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction
+   Note that the average projection ... ^r was extracted from. To bypass refusal, we ablate the "refusal direction" everywhere (at all layers and positions), effectively preventing the model from ever re...
+
+2. Locating and Steering Refusal Beyond Attention · Pith Review
+   https://pith.science/paper/2609.04721
+   1 week ago - What is actually new: cross-architecture refusal transport across the attention-to-pure-SSM gap, validated with a stronger set of internal controls than I typically see here: category-hel...
+
+3. Refusal in Language Models Is Mediated by a Single Direction Andy Arditi∗
+   https://proceedings.neurips.cc/paper_files/paper/2024/file/f545448535dfde4f9786555403ab7c49-Paper-Conference.pdf
+   labeled as directional ablation, reduces refusal rates and elicits unsafe completions. ... To induce refusal, we add the difference-in-means vector r to activations in layer l∗, the layer that · the r...
+
+4. Locating and Steering Refusal Beyond Attention
+   https://arxiv.org/html/2609.04721
+   The ridge map is biased toward ... not a clean specificity control. This is why the ablation control in Section 4 orthogonalizes the random direction to the target refusal axis after mapping (cosine.....
+
+5. How Fragile Is Safety Alignment at Frontier Scale? A Single-Direction Attack on a 320B MoE · Pith
+   https://pith.science/paper/2609.09793
+   1 week ago - The part the conventional recipe ... effect does not follow from removing just any direction: ablating a random direction orthogonal to it leaves refusal unchanged.......
+
+6. Refusal Direction in LLM Safety
+   https://www.emergentmind.com/topics/refusal-direction
+   November 8, 2025 - For the family of Llama models ... al., 2024, Ali et al., 15 Jul 2025). Manipulating activations by adding or ablating this direction directly toggles the model's propensity to refu...
+
+7. How Fragile Is Safety Alignment at Frontier Scale? A Single-Direction Attack on a 320B MoE
+   https://arxiv.org/html/2609.09793
+   The part the conventional recipe reaches by module-name matching accounts for 0.066 of that 0.776, which is why it fails silently on an MoE. The effect does not follow from removing just any direction...
+
+8. Refusal Direction Concept | Sumandora/remove-refusals-with-transformers | DeepWiki
+   https://deepwiki.com/Sumandora/remove-refusals-with-transformers/2-refusal-direction-concept
+   April 24, 2025 - Layer Selection: The refusal direction ... instructions are randomly sampled ... Ablation refers to the process of subtracting the component of a hidden state that aligns with the ref...
+

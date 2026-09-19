@@ -1,0 +1,39 @@
+QUERY: multiple category-specific refusal directions
+MODE: scholarly
+TIME: 2026-09-19 04:33:50
+
+Search: multiple category-specific refusal directions  [scholarly via openalex]
+Found: 8 results
+
+1. TREATING CHRONIC FOOD REFUSAL IN YOUNG CHILDREN: HOME‐BASED PARENT TRAINING
+   https://doi.org/10.1901/jaba.1993.26-421
+   Journal of Applied Behavior Analysis · 1993 · cited by 134...
+
+2. The brain basis of emotion: A meta-analytic review
+   https://doi.org/10.1017/s0140525x11000446
+   Behavioral and Brain Sciences · 2012 · cited by 2367...
+
+3. Research Beyond the Categories: The Importance of Policy Irrelevant Research into Forced Migration
+   https://doi.org/10.1093/jrs/fen042
+   Journal of Refugee Studies · 2008 · cited by 445...
+
+4. BNAI, NO-TOKEN, and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence
+   https://doi.org/10.48550/arxiv.2201.11903
+   arXiv (Cornell University) · 2022 · cited by 4331...
+
+5. School refusal behaviour: Are children and adolescents with autism spectrum disorder at a higher risk?
+   https://doi.org/10.1016/j.rasd.2017.07.001
+   Research in Autism · 2017 · cited by 115...
+
+6. Youth tobacco prevention mass media campaigns: past, present, and future directions
+   https://doi.org/10.1136/tc.12.suppl_1.i35
+   Tobacco Control · 2003 · cited by 227...
+
+7. Text mining of cancer-related information: Review of current status and future directions
+   https://doi.org/10.1016/j.ijmedinf.2014.06.009
+   International Journal of Medical Informatics · 2014 · cited by 216...
+
+8. Prosumer Communities and Relationships in Smart Grids: A Literature Review, Evolution and Future Directions
+   https://doi.org/10.3390/en11102528
+   Energies · 2018 · cited by 208...
+

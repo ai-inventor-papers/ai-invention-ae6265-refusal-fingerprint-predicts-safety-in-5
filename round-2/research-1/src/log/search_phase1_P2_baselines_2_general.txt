@@ -1,0 +1,39 @@
+QUERY: control tasks probing selectivity Hewitt Liang
+MODE: general
+TIME: 2026-09-19 04:33:06
+
+Search: control tasks probing selectivity Hewitt Liang  [general via ddgs]
+Found: 8 results
+
+1. Designing and Interpreting Probes with Control Tasks - ACL Anthology
+   https://aclanthology.org/D19-1275/
+   Finally, we find that while probes on the first layer of ELMo yield slightly better part-of-speech tagging accuracy than the second, probes on the second layer are substantially more selective, which ...
+
+2. Designing and Interpreting Probes with Control Tasks - ACL Anthology
+   https://www.aclweb.org/anthology/D19-1275/
+   The selectivity of a probe puts linguistic task accuracy in context with the probe’s capacity to memorize from word types. We construct control tasks for English part-of-speech tagging and dependency ...
+
+3. [PDF] Designing and Interpreting Probes with Control Tasks | Semantic Scholar
+   https://www.semanticscholar.org/paper/Designing-and-Interpreting-Probes-with-Control-Hewitt-Liang/199ff73d2f728e997f860b62a2322823d3e3d9e8
+   Control tasks, which associate word types with random outputs, are proposed to complement linguistic tasks, and it is found that dropout, commonly used to control probe complexity, is ineffective for ...
+
+4. [1909.03368] Designing and Interpreting Probes with Control Tasks
+   https://arxiv.org/abs/1909.03368
+   September 8, 2019 - Finally, we find that while probes on the first layer of ELMo yield slightly better part-of-speech tagging accuracy than the second, probes on the second layer are substantially mo...
+
+5. Designing and Interpreting Probes with Control Tasks
+   https://aclanthology.org/D19-1275.pdf
+   MLP-2). In one case, the MLP-1 probe on depen- dency edge prediction, dropout increases selectivity ... Figure 4: Linguistic task accuracies and selectivities for the 5 complexity control methods....
+
+6. Probing Language Models Omar Elbaghdadi 12660256 omarelb@gmail.com Aman Hussain
+   https://amanhussain.com/files/Probing_Language_Models.pdf
+   Hewitt and Liang (2019) introduce ... Using control tasks, we can · deﬁne a better metric for how much information · a representation encodes than predictive accuracy: selectivity.......
+
+7. Designing and Interpreting Probes · John Hewitt
+   https://www.cs.columbia.edu/~johnhew/interpreting-probes.html
+   August 17, 2019 - In this blog post, we’ll describe control tasks, which put into action the intuition that the more a probe is able to make memorized output decisions independently of the linguistic ...
+
+8. Designing and Interpreting Probes with Control Tasks Percy Liang John Hewitt
+   https://www.cs.columbia.edu/~johnhew/public/hewitt2019control_slides.pdf
+   Designing and Interpreting Probes · with Control Tasks · Percy Liang · John Hewitt...
+

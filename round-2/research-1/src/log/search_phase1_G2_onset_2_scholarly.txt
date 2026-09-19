@@ -1,0 +1,39 @@
+QUERY: refusal behavior emergence layer depth transformer
+MODE: scholarly
+TIME: 2026-09-19 04:33:24
+
+Search: refusal behavior emergence layer depth transformer  [scholarly via openalex]
+Found: 8 results
+
+1. A Practical Review of Mechanistic Interpretability for Transformer-Based Language Models
+   https://doi.org/10.48550/arxiv.2407.02646
+   arXiv (Cornell University) · 2024 · cited by 12...
+
+2. A Primer on the Inner Workings of Transformer-based Language Models
+   https://doi.org/10.48550/arxiv.2405.00208
+   arXiv (Cornell University) · 2024 · cited by 9...
+
+3. Unlocking the Potential of ChatGPT: A Comprehensive Exploration of its Applications, Advantages, Limitations, and Future Directions in Natural Language Processing
+   https://doi.org/10.48550/arxiv.2304.02017
+   arXiv (Cornell University) · 2023 · cited by 81...
+
+4. Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   https://doi.org/10.48550/arxiv.2309.01219
+   arXiv (Cornell University) · 2023 · cited by 244...
+
+5. 🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   https://doi.org/10.1162/coli.a.16
+   Computational Linguistics · 2025 · cited by 229...
+
+6. Adversarial machine learning :
+   https://doi.org/10.6028/nist.ai.100-2e2023
+   2024 · cited by 137...
+
+7. Mechanistic Interpretability for AI Safety -- A Review
+   https://doi.org/10.48550/arxiv.2404.14082
+   arXiv (Cornell University) · 2024 · cited by 31...
+
+8. Countermind: A Multi-Layered Security Architecture for Large Language Models
+   https://doi.org/10.36227/techrxiv.175994550.08962082/v1
+   2025 · cited by 2...
+

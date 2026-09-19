@@ -1,0 +1,11 @@
+QUERY: partial ablation refusal direction alpha sweep abliteration
+MODE: scholarly
+TIME: 2026-09-19 04:33:38
+
+Search: partial ablation refusal direction alpha sweep abliteration  [scholarly via openalex]
+Found: 1 results
+
+1. Locating and Steering Refusal Beyond Attention
+   https://doi.org/10.48550/arxiv.2609.04721
+   arXiv (Cornell University) · 2026 · cited by 0...
+

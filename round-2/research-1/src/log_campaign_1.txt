@@ -1,0 +1,13 @@
+[04:32:52] G1_potency[0] 'refusal direction per-layer norm profile language model' -> log/search_phase1_G1_potency_0_scholarly.txt
+[04:32:57] G1_potency[1] 'abliteration activation differences per-layer safety direction' -> log/search_phase1_G1_potency_1_scholarly.txt
+[04:33:02] G1_potency[2] 'safety direction layer-wise norm across architectures' -> log/search_phase1_G1_potency_2_scholarly.txt
+[04:33:08] G1_potency[3] 'refusal direction layer norm base instruct comparison' -> log/search_phase1_G1_potency_3_scholarly.txt
+[04:33:13] G2_onset[0] 'refusal onset first token position hidden states LLM' -> log/search_phase1_G2_onset_0_scholarly.txt
+[04:33:18] G2_onset[1] 'earliest layer refusal direction emerges language model layers' -> log/search_phase1_G2_onset_1_scholarly.txt
+[04:33:23] G2_onset[2] 'refusal behavior emergence layer depth transformer' -> log/search_phase1_G2_onset_2_scholarly.txt
+[04:33:28] G2_onset[3] 'when refusal is computed before generation first response token' -> log/search_phase1_G2_onset_3_scholarly.txt
+[04:33:34] G3_redundancy[0] 'participation ratio effective dimensionality refusal direction representation' -> log/search_phase1_G3_redundancy_0_scholarly.txt
+[04:33:39] G3_redundancy[1] 'dimensionality refusal subspace safety representation multiple directions' -> log/search_phase1_G3_redundancy_1_scholarly.txt
+[04:33:44] G3_redundancy[2] 'effective rank refusal direction hidden states' -> log/search_phase1_G3_redundancy_2_scholarly.txt
+[04:33:49] G3_redundancy[3] 'multiple category-specific refusal directions' -> log/search_phase1_G3_redundancy_3_scholarly.txt
+DONE

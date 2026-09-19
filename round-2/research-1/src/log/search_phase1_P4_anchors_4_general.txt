@@ -1,0 +1,39 @@
+QUERY: safety leaderboard huggingface refusal rate Qwen3
+MODE: general
+TIME: 2026-09-19 04:33:43
+
+Search: safety leaderboard huggingface refusal rate Qwen3  [general via ddgs]
+Found: 8 results
+
+1. OBLITERATUS/Qwen3.6-27B-OBLITERATED · Hugging Face
+   https://huggingface.co/OBLITERATUS/Qwen3.6-27B-OBLITERATED
+   1 month ago - Parameters: 26.9B Weights: BF16 safetensors, 28 shards Public GGUF ladder: Q4_K_M, Q5_K_M, Q6_K, Q8_0 Largest public GGUF: Q8_0, 28.6 GB OBLITERATUS corpus: 842 paired prompts, 7 severit...
+
+2. Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic
+   https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom
+   2 weeks ago - On Qwen3-8B, the escalated-coverage model raises in-distribution political refusal from 9.47% to 84.75%, and it also transfers: the mean unsafe-response rate across three broader harmful...
+
+3. Qwen/Qwen3Guard-Gen-8B · Hugging Face
+   https://huggingface.co/Qwen/Qwen3Guard-Gen-8B
+   October 16, 2025 - from transformers import AutoModelForCausalLM, AutoTokenizer import re model_name = "Qwen/Qwen3Guard-Gen-8B" # load the tokenizer and the model tokenizer = AutoTokenizer.from_pretra...
+
+4. Qwen/Qwen3-4B-SafeRL · Hugging Face
+   https://huggingface.co/Qwen/Qwen3-4B-SafeRL
+   October 16, 2025 - Safety Maximization: Penalizes the generation of unsafe content, as detected by Qwen3Guard-Gen-4B. Helpfulness Maximization: Rewards responses that are genuinely helpful, as evaluat...
+
+5. JonathanColetti/Qwen3.8-27B-Uncensored · Hugging Face
+   https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
+   August 16, 2026 - Refusal rate is the count of refusals over 100 held-out prompts from mlabonne/harmful_behaviors (test split) — explicitly harmful requests, not benign ones. So this number is not an ...
+
+6. JonathanColetti/Qwen3.8-27B-Uncensored-GGUF · Hugging Face
+   https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
+   1 month ago - Refusal rate is the count of refusals over 100 heldout prompts from mlabonne/harmful_behaviors (test split) - explicitly harmful requests, not benign ones. So this number is not an over-...
+
+7. bottlecapai/ThinkingCap-Qwen3.6-27B · Hugging Face
+   https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
+   July 8, 2026 - Brevity finetuning leaves safety behaviour intact: on both safety sets bottlecapai/ThinkingCap-Qwen3.6-27B refuses harmful/jailbreak prompts at the base model's rate (statistically indi...
+
+8. OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face
+   https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
+   3 weeks ago - MLX support pending upstream mlx_lm adding Qwen3.5 architecture support. V1: stock → 5 rounds of iterative SVD abliteration (aggressive, 5 directions, low regularization) Result: 0% refu...
+

@@ -1,0 +1,39 @@
+QUERY: steering vector number of examples scaling law
+MODE: scholarly
+TIME: 2026-09-19 04:33:33
+
+Search: steering vector number of examples scaling law  [scholarly via openalex]
+Found: 8 results
+
+1. Attosecond physics
+   https://doi.org/10.1103/revmodphys.81.163
+   Reviews of Modern Physics · 2009 · cited by 5423...
+
+2. Quantum steering: a review with focus on semidefinite programming
+   https://doi.org/10.1088/1361-6633/80/2/024001
+   Reports on Progress in Physics · 2016 · cited by 460...
+
+3. The atomic simulation environment—a Python library for working with atoms
+   https://doi.org/10.1088/1361-648x/aa680e
+   Journal of Physics Condensed Matter · 2017 · cited by 4753...
+
+4. The future of computing beyond Moore’s Law
+   https://doi.org/10.1098/rsta.2019.0061
+   Philosophical Transactions of the Royal Society A Mathematical Physical and Engineering Sciences · 2020 · cited by 521...
+
+5. Physics-informed machine learning
+   https://doi.org/10.1038/s42254-021-00314-5
+   Nature Reviews Physics · 2021 · cited by 7988...
+
+6. Multidimensional quantum entanglement with large-scale integrated optics
+   https://doi.org/10.1126/science.aar7053
+   Science · 2018 · cited by 813...
+
+7. A Soft, Steerable Continuum Robot That Grows via Tip Extension
+   https://doi.org/10.1089/soro.2018.0034
+   Soft Robotics · 2018 · cited by 237...
+
+8. CHARMM: The biomolecular simulation program
+   https://doi.org/10.1002/jcc.21287
+   Journal of Computational Chemistry · 2009 · cited by 9305...
+

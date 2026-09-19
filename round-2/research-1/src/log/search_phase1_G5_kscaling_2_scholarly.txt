@@ -1,0 +1,39 @@
+QUERY: stability refusal direction few examples contrast pairs
+MODE: scholarly
+TIME: 2026-09-19 04:33:28
+
+Search: stability refusal direction few examples contrast pairs  [scholarly via openalex]
+Found: 8 results
+
+1. Structural Studies of Amyloid Proteins at the Molecular Level
+   https://doi.org/10.1146/annurev-biochem-061516-045104
+   Annual Review of Biochemistry · 2017 · cited by 555...
+
+2. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+3. Educating the Net Generation
+   https://openalex.org/W141994778
+   Bibliothèque et Archives nationales du Québec (Québec government) · 2005 · cited by 2110...
+
+4. Force Dynamics in Language and Cognition
+   https://doi.org/10.1207/s15516709cog1201_2
+   Cognitive Science · 1988 · cited by 2016...
+
+5. Specification of communicating processes: temporal logic versus refusals-based refinement
+   https://doi.org/10.1007/s00165-007-0065-0
+   Formal Aspects of Computing · 2008 · cited by 30...
+
+6. Clinical Practice Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU
+   https://doi.org/10.1097/ccm.0000000000003299
+   Critical Care Medicine · 2018 · cited by 4044...
+
+7. Revisions to the Classification, Nomenclature, and Diversity of Eukaryotes
+   https://doi.org/10.1111/jeu.12691
+   Journal of Eukaryotic Microbiology · 2018 · cited by 1435...
+
+8. Stability and change of lifestyle profiles in cardiovascular patients after their first acute coronary event
+   https://doi.org/10.1371/journal.pone.0183905
+   PLoS ONE · 2017 · cited by 54...
+

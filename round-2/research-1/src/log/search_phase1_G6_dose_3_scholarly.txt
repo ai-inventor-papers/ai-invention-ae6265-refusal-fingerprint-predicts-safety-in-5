@@ -1,0 +1,39 @@
+QUERY: refusal direction removal strength effect sharpness
+MODE: scholarly
+TIME: 2026-09-19 04:33:53
+
+Search: refusal direction removal strength effect sharpness  [scholarly via openalex]
+Found: 8 results
+
+1. The effect of employees motivation on organizational performance
+   https://doi.org/10.5897/jpapr2014.0300
+   Journal of Public Administration and Policy Research · 2015 · cited by 161...
+
+2. Removal as a Political Question
+   https://openalex.org/W1529511495
+   bepress Legal Repository · 2013 · cited by 40...
+
+3. GUIDELINES FOR CONE PENETRATION TEST. (PERFORMANCE AND DESIGN)
+   https://openalex.org/W2581395875
+   ROSA P · 1978 · cited by 450...
+
+4. A Space That Will Never Be Filled: Sharp Communication and the Simultaneity of Opposites
+   https://doi.org/10.1086/694760
+   Current Anthropology · 2017 · cited by 24...
+
+5. Calculating Lives: The Numbers and Narratives of Forced Removals in Queensland 1859 - 1972
+   https://doi.org/10.25904/1912/95
+   Griffith Research Online · 2005 · cited by 18...
+
+6. A review on micro-milling: recent advances and future trends
+   https://doi.org/10.1007/s00170-020-06445-w
+   The International Journal of Advanced Manufacturing Technology · 2020 · cited by 222...
+
+7. The Global Traffic in Human Organs
+   https://doi.org/10.1086/300123
+   Current Anthropology · 2000 · cited by 719...
+
+8. Burnout as a clinical entity—its importance in health care workers
+   https://doi.org/10.1093/occmed/48.4.237
+   Occupational Medicine · 1998 · cited by 371...
+

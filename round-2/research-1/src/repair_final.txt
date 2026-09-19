@@ -1,0 +1,55 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+[fetch] 1 https://github.com/centerforaisafety/HarmBench -> OK
+[fetch] 2 https://api.github.com/repos/centerforaisafety/HarmBench/commits/main -> OK
+[fetch] 3 https://raw.githubusercontent.com/centerforaisafety/HarmBench/main/evaluate_completions.py -> OK
+[fetch] 4 https://raw.githubusercontent.com/centerforaisafety/HarmBench/main/eval_utils.py -> OK
+[fetch] 5 https://raw.githubusercontent.com/JailbreakBench/jailbreakbench/main/README.md -> OK
+[fetch] 6 https://raw.githubusercontent.com/JailbreakBench/jailbreakbench/main/src/jailbreakbench/cl -> OK
+[fetch] 7 https://arxiv.org/pdf/2404.01318 -> OK
+[fetch] 9 https://github.com/paul-rottger/xstest -> OK
+[fetch] 10 https://raw.githubusercontent.com/paul-rottger/xstest/main/evaluation/classify_completions -> OK
+[fetch] 11 https://raw.githubusercontent.com/paul-rottger/xstest/main/evaluation/classify_completions -> OK
+[fetch] 12 https://api.github.com/repos/paul-rottger/xstest/git/trees/main?recursive=1 -> OK
+[fetch] 13 https://github.com/GoogleCloudPlatform/activation-model-scanner -> OK
+[fetch] 14 https://research.google/pubs/ams-detecting-unsafe-and-tampered-language-models-via-activat -> OK
+[fetch] 15 https://arxiv.org/abs/2606.25750 -> OK
+[fetch] 16 https://arxiv.org/pdf/2607.01854v2 -> OK
+[fetch] 17 https://arxiv.org/abs/2502.09674 -> OK
+[fetch] 18 https://arxiv.org/abs/2603.22061 -> OK
+[fetch] 19 https://arxiv.org/abs/2602.09434 -> OK
+[fetch] 20 https://arxiv.org/abs/2607.14147 -> OK
+[fetch] 21 https://arxiv.org/abs/2609.09793 -> OK
+[fetch] 22 https://arxiv.org/abs/2606.08044 -> OK
+[fetch] 23 https://arxiv.org/pdf/2406.11717 -> OK
+[fetch] 24 https://arxiv.org/pdf/2609.04721 -> OK
+[fetch] 25 https://arxiv.org/abs/2501.17727 -> OK
+[fetch] 26 https://arxiv.org/abs/2507.08802 -> OK
+[fetch] 27 https://aclanthology.org/D19-1275/ -> OK
+[fetch] 28 https://arxiv.org/pdf/2404.15255 -> OK
+[fetch] 30 https://aclanthology.org/2026.acl-long.1334.pdf -> OK
+[fetch] 31 https://arxiv.org/abs/2511.14195 -> OK
+[fetch] 33 https://arxiv.org/abs/2605.21545 -> OK
+[fetch] 34 https://arxiv.org/abs/2407.17436 -> OK
+[fetch] 35 https://arxiv.org/abs/2406.14598 -> OK
+[fetch] 37 https://arxiv.org/abs/2606.15980 -> OK
+[fetch] 38 https://arxiv.org/abs/2607.17427 -> OK
+[fetch] 39 https://arxiv.org/abs/2608.18093 -> OK
+[fetch] 40 https://arxiv.org/abs/2608.17202 -> OK
+[fetch] 41 https://arxiv.org/abs/2512.13655 -> OK
+[fetch] 42 https://arxiv.org/abs/2607.05842 -> OK
+[fetch] 43 https://arxiv.org/abs/2602.02132 -> OK
+[fetch] 45 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html -> OK
+[fetch] 47 https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html -> OK
+[fetch] 54 https://aclanthology.org/2024.naacl-long.301/ -> OK
+MuPDF error: syntax error: could not parse color space (181 0 R)
+
+MuPDF error: syntax error: could not parse color space (441 0 R)
+
+MuPDF error: syntax error: could not parse color space (1302 0 R)
+
+MuPDF error: syntax error: could not parse color space (1329 0 R)
+
+[fetch] 56 https://arxiv.org/pdf/2402.04249 -> OK
+[fetch] 59 https://proceedings.neurips.cc/paper_files/paper/2024/file/f545448535dfde4f9786555403ab7c4 -> OK
+
+===== INVALID PASSAGES: 0 =====

@@ -1,0 +1,39 @@
+QUERY: distinguish abliterated checkpoint alignment provenance
+MODE: scholarly
+TIME: 2026-09-19 04:33:00
+
+Search: distinguish abliterated checkpoint alignment provenance  [scholarly via openalex]
+Found: 8 results
+
+1. Has This Checkpoint Been Abliterated? A Two-Signal Audit and Its Failure Map
+   https://openalex.org/W7167380820
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+2. A Behavioral Fingerprint for Large Language Models: Provenance Tracking via Refusal Vectors
+   https://openalex.org/W7128648839
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+3. Abliteration Is Not a Scalpel: Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families
+   https://openalex.org/W7170111320
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+4. Defending against Adaptive Prompt Injection Attacks via Reasoning-enabled Task Alignment
+   https://openalex.org/W7165064791
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+5. The Entanglement Wall: Activation-Space Probes as Risk Detectors, Not Context Adjudicators
+   https://openalex.org/W7169633709
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+6. Discovering Hidden Gems in Model Repositories
+   https://openalex.org/W7126281606
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+7. Fool's Gold: Defensive Deception Against Safety-Removal Attacks on Open-Weight Models
+   https://doi.org/10.48550/arxiv.2608.17202
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+8. Divide, Consult, Conquer: Capability Laundering Through Aligned LLMs
+   https://openalex.org/W7213371567
+   arXiv (Cornell University) · 2026 · cited by 0...
+

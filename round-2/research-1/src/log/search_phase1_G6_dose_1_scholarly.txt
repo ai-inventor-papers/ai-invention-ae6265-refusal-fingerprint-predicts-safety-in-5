@@ -1,0 +1,39 @@
+QUERY: intervention strength sweep latent vulnerability refusal
+MODE: scholarly
+TIME: 2026-09-19 04:33:43
+
+Search: intervention strength sweep latent vulnerability refusal  [scholarly via openalex]
+Found: 8 results
+
+1. Enriching Location Representation with Detailed Semantic Information
+   https://doi.org/10.4230/lipics.giscience.2025.3
+   arXiv (Cornell University) · 2024 · cited by 461...
+
+2. Hybridity, or the Cultural Logic of Globalization
+   https://doi.org/10.26530/oapen_626979
+   Temple University Press eBooks · 2006 · cited by 798...
+
+3. A pilot study of alternative substrates in the critically Ill subject using a ketogenic feed
+   https://doi.org/10.1038/s41467-023-42659-8
+   Nature Communications · 2023 · cited by 26...
+
+4. Oculo‐visual changes and clinical considerations affecting older patients with dementia
+   https://doi.org/10.1111/opo.12220
+   Ophthalmic and Physiological Optics · 2015 · cited by 73...
+
+5. Fame Attack
+   https://doi.org/10.5040/9781849661386
+   Bloomsbury Publishing Plc eBooks · 2012 · cited by 145...
+
+6. Conspiracy endorsement and its associations with personality functioning, anxiety, loneliness, and sociodemographic characteristics during the COVID-19 pandemic in a representative sample of the German population
+   https://doi.org/10.1371/journal.pone.0263301
+   PLoS ONE · 2022 · cited by 42...
+
+7. Removal as a Political Question
+   https://openalex.org/W1529511495
+   bepress Legal Repository · 2013 · cited by 40...
+
+8. A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges
+   https://doi.org/10.3390/bdcc9120320
+   Big Data and Cognitive Computing · 2025 · cited by 44...
+

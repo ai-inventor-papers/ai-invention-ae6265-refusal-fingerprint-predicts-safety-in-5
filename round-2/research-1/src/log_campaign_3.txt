@@ -1,0 +1,12 @@
+[04:32:55] P2_baselines[0] 'randomly initialized transformers interpretability scores auto-interp' -> log/search_phase1_P2_baselines_0_general.txt
+[04:33:00] P2_baselines[1] 'unrestricted alignment maps randomly initialized models causal abstraction' -> log/search_phase1_P2_baselines_1_general.txt
+[04:33:05] P2_baselines[2] 'control tasks probing selectivity Hewitt Liang' -> log/search_phase1_P2_baselines_2_general.txt
+[04:33:10] P2_baselines[3] 'random direction ablation refusal direction control' -> log/search_phase1_P2_baselines_3_general.txt
+[04:33:16] P2_baselines[4] 'activation patching reference conditions zero mean random ablation' -> log/search_phase1_P2_baselines_4_general.txt
+[04:33:21] P4_anchors[0] 'RefusalBench refusal rates benchmark 2026' -> log/search_phase1_P4_anchors_0_general.txt
+[04:33:26] P4_anchors[1] 'AIR-Bench safety benchmark 2024' -> log/search_phase1_P4_anchors_1_general.txt
+[04:33:32] P4_anchors[2] 'SORRY-Bench safety benchmark refusal' -> log/search_phase1_P4_anchors_2_general.txt
+[04:33:37] P4_anchors[3] 'StrongREJECT jailbreak evaluation benchmark' -> log/search_phase1_P4_anchors_3_general.txt
+[04:33:42] P4_anchors[4] 'safety leaderboard huggingface refusal rate Qwen3' -> log/search_phase1_P4_anchors_4_general.txt
+[04:33:47] P4_anchors[5] 'latent safety score model evaluation arxiv' -> log/search_phase1_P4_anchors_5_general.txt
+DONE

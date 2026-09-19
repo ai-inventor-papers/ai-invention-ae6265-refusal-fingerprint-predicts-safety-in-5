@@ -1,0 +1,39 @@
+QUERY: StrongREJECT jailbreak evaluation benchmark
+MODE: general
+TIME: 2026-09-19 04:33:38
+
+Search: StrongREJECT jailbreak evaluation benchmark  [general via ddgs]
+Found: 8 results
+
+1. How to Evaluate Jailbreak Methods: A Case Study with the StrongREJECT Benchmark – The Berkeley Artificial Intelligence Research Blog
+   https://bair.berkeley.edu/blog/2024/08/28/strong-reject/
+   August 28, 2024 - StrongREJECT is robustly accurate across many jailbreaks. A lower score indicates greater agreement with human judgments of jailbreak effectiveness. These results demonstrate that ou...
+
+2. A STRONGREJECT for Empty Jailbreaks Alexandra Souly∗ Qingyuan Lu∗ Dillon Bowen∗
+   https://arxiv.org/pdf/2402.10260
+   To address these issues, we present a new benchmark—the · Strong, Robust Evaluation of Jailbreaks at Evading Censorship Techniques (StrongREJECT)....
+
+3. A ("StrongREJECT")̄ for Empty Jailbreaks
+   https://arxiv.org/html/2402.10260v2
+   To execute such an evaluation, researchers must choose a dataset of forbidden prompts and an evaluation method to score the victim model’s responses to jailbroken prompts. Together, the forbidden prom...
+
+4. StrongREJECT documentation — StrongREJECT documentation
+   https://strong-reject.readthedocs.io/
+   StrongREJECT is a state-of-the-art LLM jailbreak evaluation benchmark....
+
+5. JailbreakBench: An Open Robustness Benchmark for ...
+   https://proceedings.neurips.cc/paper_files/paper/2024/file/63092d79154adebd7305dfd498cbff70-Paper-Datasets_and_Benchmarks_Track.pdf
+   Upon release of the jailbreak artifacts, the success rate of GCG · on GPT models (reported in Table 2) has substantially decreased to ≈5% likely due to safety patches. These transfer attacks were eval...
+
+6. StrongREJECT Framework for LLM Jailbreaks
+   https://www.emergentmind.com/topics/strongreject-framework
+   StrongREJECT is a benchmark evaluating LLM robustness against jailbreak attacks by scoring responses on refusal, specificity, and convincingness....
+
+7. detector: StrongREJECT -- evaluation for jailbreaks · Issue #973 · NVIDIA/garak
+   https://github.com/NVIDIA/garak/issues/973
+   November 4, 2024 - StrongREJECT is a state-of-the-art LLM jailbreak evaluation benchmark....
+
+8. Evaluating AI Jailbreaks with the StrongREJECT Benchmark
+   https://www.periculo.co.uk/cyber-security-blog/evaluating-ai-jailbreaks-with-the-strongreject-benchmark
+   March 19, 2026 - These factors underscore the need for a structured, repeatable benchmarking framework. Developed by leading AI safety researchers, the StrongREJECT benchmark addresses the critical ne...
+

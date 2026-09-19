@@ -1,0 +1,39 @@
+QUERY: refusal direction per-layer norm profile language model
+MODE: scholarly
+TIME: 2026-09-19 04:32:53
+
+Search: refusal direction per-layer norm profile language model  [scholarly via openalex]
+Found: 8 results
+
+1. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+2. The potential existential threat of large language models to online survey research
+   https://doi.org/10.1073/pnas.2518075122
+   Proceedings of the National Academy of Sciences · 2025 · cited by 61...
+
+3. The Politics of Written Language in the Arab World
+   https://doi.org/10.1163/9789004346178
+   2017 · cited by 84...
+
+4. Punishing disadvantage - a profile of children in custody
+   https://openalex.org/W2128665307
+   BIROn (Birkbeck, University of London) · 2010 · cited by 97...
+
+5. The Politics of Written Language in the Arab World, Writing Change
+   https://doi.org/10.1163/9789004346178
+   2017 · cited by 67...
+
+6. From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models
+   https://doi.org/10.1101/2025.02.06.636901
+   bioRxiv (Cold Spring Harbor Laboratory) · 2025 · cited by 22...
+
+7. Proceedings of the First ACL Workshop on Ethics in Natural Language Processing
+   https://doi.org/10.18653/v1/w17-16
+   2017 · cited by 40...
+
+8. Academic Ableism
+   https://doi.org/10.3998/mpub.9708722
+   University of Michigan Press eBooks · 2017 · cited by 848...
+

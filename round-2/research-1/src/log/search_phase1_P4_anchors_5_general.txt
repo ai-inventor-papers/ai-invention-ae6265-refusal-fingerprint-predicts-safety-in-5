@@ -1,0 +1,39 @@
+QUERY: latent safety score model evaluation arxiv
+MODE: general
+TIME: 2026-09-19 04:33:49
+
+Search: latent safety score model evaluation arxiv  [general via ddgs]
+Found: 8 results
+
+1. PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach
+   https://arxiv.org/html/2511.20703v1
+   November 24, 2025 - We define and quantify PropensityScore, using it to demonstrate that operational pressure systematically erodes safety alignment. Our results reveal that even models with low basel...
+
+2. [2511.20703] PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach
+   https://arxiv.org/abs/2511.20703
+   November 24, 2025 - Abstract page for arXiv paper 2511.20703: PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach...
+
+3. When Behavioral Safety Evaluation Fails: A Representation-Level Perspective
+   https://arxiv.org/html/2606.08044
+   August 4, 2026 - To quantify how much perturbation a failure takes, rather than only whether the model fails, we introduce the Latent Vulnerability Score (LVS): the safety degradation induced per unit...
+
+4. PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an
+   https://static.scale.com/uploads/654197dc94d34f66c0f5184e/arXiv_Propensity_Evaluation.pdf
+   propensity: models frequently choose high-risk tools when under pressure, despite lacking the capability to execute such actions · unaided. These findings call for a shift from static capability audit...
+
+5. Safety Beyond the Interface: Detecting Harm via Latent States in Large Language Models
+   https://arxiv.org/html/2609.19472.pdf
+   Recent work suggests it does [14, 15, 16]. If that’s true, we should be able to read that signal straight from the model’s internals, minimizing the reliance on expensive external safety infrastructur...
+
+6. Do All LLMs Know When They’re Being Harmful? A Reproducibility Study of Latent-Space Safety Probes Across Model Families
+   https://arxiv.org/html/2608.08029
+   We find that the original MLP probe architecture extends to other model families with F1 scores within a point of the values reported for LLaMA-3.1-8B. Our experiments varying seed values reveals an i...
+
+7. EvalSafetyGap: A Hybrid Survey and Conceptual Framework for LLM Evaluation-Safety Failures
+   https://arxiv.org/html/2606.30219v1
+   June 29, 2026 - LLM evaluation and AI safety face a shared measurement problem: benchmark scores, reward-model signals, and reported safety metrics can improve while the latent properties they are mea...
+
+8. [2606.08044] When Behavioral Safety Evaluation Fails: A Representation-Level Perspective
+   https://arxiv.org/abs/2606.08044
+   June 6, 2026 - To formalize the evaluation, we propose the Latent Vulnerability Score (LVS) to measure how easily harmful behavior can be elicited by bounded latent perturbations. Using this evaluatio...
+

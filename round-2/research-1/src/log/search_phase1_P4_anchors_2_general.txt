@@ -1,0 +1,39 @@
+QUERY: SORRY-Bench safety benchmark refusal
+MODE: general
+TIME: 2026-09-19 04:33:33
+
+Search: SORRY-Bench safety benchmark refusal  [general via ddgs]
+Found: 8 results
+
+1. GitHub - SORRY-Bench/sorry-bench: Benchmark evaluation code for "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal" (ICLR 2025) · GitHub
+   https://github.com/SORRY-Bench/sorry-bench
+   Specifically, for each unsafe instruction of the 440 unsafe instructions in SORRY-Bench dataset, we annotate 16 diverse model responses (both ID and OOD) as either in "compliance" of, or "refusal" to ...
+
+2. SORRY-Bench
+   https://sorry-bench.github.io/
+   On top of this 44-class taxonomy, we craft a class-balanced LLM safety refusal evaluation dataset (§2.3). Our base dataset consists of 440 unsafe instructions in total, with additional manually create...
+
+3. [2406.14598] SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal
+   https://arxiv.org/abs/2406.14598
+   March 1, 2025 - Putting these together, we evaluate over 50 proprietary and open-weight LLMs on SORRY-Bench, analyzing their distinctive safety refusal behaviors. We hope our effort provides a buildin...
+
+4. SORRY-Bench: LLM Safety Refusal Evaluation
+   https://www.emergentmind.com/topics/sorry-bench
+   January 31, 2026 - SORRY-Bench is a systematic framework that evaluates LLM safety refusals using a balanced taxonomy of 45 unsafe topics with 450 curated prompts. It extends its evaluation by applyin...
+
+5. SORRY-BENCH: SYSTEMATICALLY EVALUATING LARGE LANGUAGE MODEL SAFETY REFUSAL - Princeton University
+   https://collaborate.princeton.edu/en/publications/sorry-bench-systematically-evaluating-large-language-model-safety/
+   Existing evaluation efforts, however, face three limitations that we address with SORRY-Bench, our proposed benchmark. First, existing methods often use coarse-grained taxonomies of unsafe topics, and...
+
+6. [Quick Review] SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal Behaviors
+   https://liner.com/review/sorrybench-systematically-evaluating-large-language-model-safety-refusal-behaviors
+   June 20, 2024 - SORRY-Bench constructs a class-balanced evaluation dataset with 440 unsafe instructions across 44 fine-grained risk categories, compiled through a human-in-the-loop taxonomy curation. ...
+
+7. SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal Behaviors Warning: This paper contains red-teaming related content that can be offensive in nature.
+   https://arxiv.org/html/2406.14598v1
+   June 20, 2024 - In this work, we identify three ... safety refusal responses, commonly starting with “I’m sorry, I cannot…”, our proposed systematic benchmark to evaluate LLM safety refusal behaviors....
+
+8. sorry-bench/sorry-bench-202406 · Datasets at Hugging Face
+   https://huggingface.co/datasets/sorry-bench/sorry-bench-202406
+   LLM developers can use this dataset to systematically check model safety refusal behaviors on each of our 45 safety categories (or on a subset of these categories, according to their own safety polici...
+
