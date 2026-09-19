@@ -1,0 +1,298 @@
+{
+  "valid": true,
+  "file_errors": [],
+  "schema_errors": [],
+  "content_warnings": [],
+  "files_found": {
+    "research_out.json": {
+      "exists": true,
+      "path": "/ai-inventor/aii_data/runs/run_fEjgpc8BQoQS/3_invention_loop/iter_1/gen_art/gen_art_research_1/research_out.json",
+      "source_count": 23,
+      "size": 33071
+    }
+  },
+  "source_count": 23,
+  "checked_at": "2026-09-19T01:54:56.297702+00:00",
+  "passage_check_scope": "Case/whitespace-normalized text occurrence at the source URL (or archive fallback). Not claim entailment, locator verification, or author/year verification. status=error means unverified, not a misquotation.",
+  "passages": [
+    {
+      "source_index": 1,
+      "source_url": "https://qwenlm.github.io/blog/qwen3/",
+      "quote": "approximately 36 trillion tokens covering 119 languages and dialects",
+      "locator": "Pre-training section",
+      "status": "valid",
+      "context": "...2.5. while qwen2.5 was pre-trained on 18 trillion tokens, qwen3 uses nearly twice that amount, with approximately 36 trillion tokens covering 119 languages and dialects. to build this large dataset, we collected data not only from the web but also from pdf-like docume...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 2,
+      "source_url": "https://arxiv.org/abs/2505.09388",
+      "quote": "with parameter scales ranging from 0.6 to 235 billion",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...bilities. the qwen3 series includes models of both dense and mixture-of-expert (moe) architectures, with parameter scales ranging from 0.6 to 235 billion. a key innovation in qwen3 is the integration of thinking mode (for complex, multi-step reasoning) ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 3,
+      "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+      "quote": "\"base_model:Qwen/Qwen3-8B-Base\",\"base_model:finetune:Qwen/Qwen3-8B-Base\",\"license:apache-2.0\"",
+      "locator": "tags field",
+      "status": "valid",
+      "context": "...ers\",\"safetensors\",\"qwen3\",\"text-generation\",\"conversational\",\"arxiv:2309.00071\",\"arxiv:2505.09388\",\"base_model:qwen/qwen3-8b-base\",\"base_model:finetune:qwen/qwen3-8b-base\",\"license:apache-2.0\",\"eval-results\",\"text-generation-inference\",\"endpoints_compatible\",\"deploy:sagemaker\",\"deploy:azure\"...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 3,
+      "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+      "quote": "\"downloads\":12988756",
+      "locator": "downloads field",
+      "status": "valid",
+      "context": "...\",\"text-generation-inference\",\"endpoints_compatible\",\"deploy:sagemaker\",\"deploy:azure\",\"region:us\"],\"downloads\":12988756,\"likes\":2014,\"modelid\":\"qwen/qwen3-8b\",\"author\":\"qwen\",\"sha\":\"b968826d9c46dd6066d109eabc6255188de91...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 4,
+      "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B-Base",
+      "quote": "\"arxiv:2505.09388\",\"license:apache-2.0\"",
+      "locator": "tags field",
+      "status": "valid",
+      "context": "...ame\":\"transformers\",\"tags\":[\"transformers\",\"safetensors\",\"qwen3\",\"text-generation\",\"conversational\",\"arxiv:2505.09388\",\"license:apache-2.0\",\"text-generation-inference\",\"endpoints_compatible\",\"region:us\"],\"downloads\":442094,\"likes\":125,\"mod...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 5,
+      "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-8B-abliterated-v2",
+      "quote": "This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens.",
+      "locator": "Model card introduction",
+      "status": "valid",
+      "context": "...ansformers](https://github.com/sumandora/remove-refusals-with-transformers) to know more about it). this is a crude, proof-of-concept implementation to remove refusals from an llm model without using transformerlens. ablation was performed using a new and faster method, which yields better results. **important note...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 6,
+      "source_url": "https://huggingface.co/api/models?search=Qwen3-Abliterated&limit=12&full=false",
+      "quote": "\"id\":\"huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF\",\"author\":\"huihui-ai\"",
+      "locator": "first search result",
+      "status": "valid",
+      "context": "[{\"_id\":\"6a81b8bfa514d4eed962e012\",\"id\":\"huihui-ai/huihui-qwen3.8-27b-abliterated-gguf\",\"author\":\"huihui-ai\",\"gated\":false,\"lastmodified\":\"2026-09-18t03:12:46.000z\",\"likes\":788,\"trendingscore\":99,\"private\":fa...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 7,
+      "source_url": "https://arxiv.org/abs/2406.11717",
+      "quote": "refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72B parameters in size",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "... across chat models, its underlying mechanisms remain poorly understood. in this work, we show that refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72b parameters in size. specifically, for each model, we find a single direction such that erasing this direction from the...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 7,
+      "source_url": "https://arxiv.org/abs/2406.11717",
+      "quote": "erasing this direction from the model's residual stream activations prevents it from refusing harmful instructions, while adding this direction elicits refusal on even harmless instructions",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...ls up to 72b parameters in size. specifically, for each model, we find a single direction such that erasing this direction from the model's residual stream activations prevents it from refusing harmful instructions, while adding this direction elicits refusal on even harmless instructions. leveraging this insight, we propose a novel white-box jailbreak method that surgically disables re...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://arxiv.org/abs/2309.07045",
+      "quote": "which comprises 11,435 diverse multiple choice questions spanning across 7 distinct categories of safety concerns",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "... in this work, we present safetybench, a comprehensive benchmark for evaluating the safety of llms, which comprises 11,435 diverse multiple choice questions spanning across 7 distinct categories of safety concerns. notably, safetybench also incorporates both chinese and english data, facilitating the evaluation ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 9,
+      "source_url": "https://arxiv.org/abs/2402.04249",
+      "quote": "we conduct a large-scale comparison of 18 red teaming methods and 33 target LLMs and defenses",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...ed teaming evaluations and systematically design harmbench to meet these criteria. using harmbench, we conduct a large-scale comparison of 18 red teaming methods and 33 target llms and defenses, yielding novel insights. we also introduce a highly efficient adversarial training method that gre...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 10,
+      "source_url": "https://arxiv.org/abs/2406.18495",
+      "quote": "we construct WildGuardMix, a large-scale and carefully balanced multi-task safety moderation dataset with 92K labeled examples",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...s, a key measure for evaluating safety behaviors in model responses. > to address these challenges, we construct wildguardmix, a large-scale and carefully balanced multi-task safety moderation dataset with 92k labeled examples that cover vanilla (direct) prompts and adversarial jailbreaks, paired with various refusal and com...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 10,
+      "source_url": "https://arxiv.org/abs/2406.18495",
+      "quote": "reducing the success rate of jailbreak attacks from 79.8% to 2.4%",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...lness identification). wildguard serves as a highly effective safety moderator in an llm interface, reducing the success rate of jailbreak attacks from 79.8% to 2.4%. comments: | neurips 2024 camera ready. first two authors contributed equally. third and fourth aut...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 11,
+      "source_url": "https://arxiv.org/abs/2406.14598",
+      "quote": "a fine-grained taxonomy of 44 potentially unsafe topics, and 440 class-balanced unsafe instructions",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...ver 3x less represented than tests for fraudulent activities. sorry-bench improves on this by using a fine-grained taxonomy of 44 potentially unsafe topics, and 440 class-balanced unsafe instructions, compiled through human-in-the-loop methods. second, linguistic characteristics and formatting of p...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 12,
+      "source_url": "https://arxiv.org/abs/2402.13494",
+      "quote": "detects jailbreak prompts by scrutinizing the gradients of safety-critical parameters in LLMs",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...nsive data collection and training processes. in this study, we propose gradsafe, which effectively detects jailbreak prompts by scrutinizing the gradients of safety-critical parameters in llms. our method is grounded in a pivotal observation: the gradients of an llm's loss for jailbreak prom...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 13,
+      "source_url": "https://arxiv.org/abs/2404.12038",
+      "quote": "in our evaluation of seven open-source LLMs, we observe an average attack success rate of 99.14%, based on the classic keyword-matching criterion",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...s are known. our experiments further uncover the safety risks present in current llms. for example, in our evaluation of seven open-source llms, we observe an average attack success rate of 99.14%, based on the classic keyword-matching criterion. finally, we provide insights into the safety mechanism of llms. the code is available at [this htt...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 14,
+      "source_url": "https://arxiv.org/abs/2408.17003",
+      "quote": "identifying a small set of contiguous layers in the middle of the model that are crucial for distinguishing malicious queries from normal ones",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...challenges, our work uncovers the mechanism behind security in aligned llms at the parameter level, identifying a small set of contiguous layers in the middle of the model that are crucial for distinguishing malicious queries from normal ones, referred to as ``safety layers\". we first confirm the existence of these safety layers by analyzin...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 15,
+      "source_url": "https://arxiv.org/abs/2402.05162",
+      "quote": "the isolated regions we find are sparse, comprising about $3\\%$ at the parameter level and $2.5\\%$ at the rank level",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...at are disentangled from utility-relevant regions at both the neuron and rank levels. surprisingly, the isolated regions we find are sparse, comprising about $3\\%$ at the parameter level and $2.5\\%$ at the rank level. removing these regions compromises safety without significantly impacting utility, corroborating t...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 16,
+      "source_url": "https://opensource.googleblog.com/2026/04/introducing-ams-activation-based-model-scanner-for-open-weight-llm-safety-verification.html",
+      "quote": "The entire scan completes in a single forward pass per prompt pair, typically 10-40 seconds on GPU hardware.",
+      "locator": "How It Works section",
+      "status": "valid",
+      "context": "... is that this measurement requires no generation, no benchmark queries, and no ground-truth labels. the entire scan completes in a single forward pass per prompt pair, typically 10-40 seconds on gpu hardware. the probe consists of a single direction vector (~16kb for standard 4096-dimensional models). no mo...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 16,
+      "source_url": "https://opensource.googleblog.com/2026/04/introducing-ams-activation-based-model-scanner-for-open-weight-llm-safety-verification.html",
+      "quote": "A 2025 study identified over 8,000 safety-modified model repositories on Hugging Face alone, with modified models complying with unsafe requests at rates of 74% compared to 19% for their original instruction-tuned counterparts.",
+      "locator": "Introduction",
+      "status": "valid",
+      "context": "..., google kubernetes engine (gke) the open-weight model ecosystem is thriving--and so is its shadow. a 2025 study identified over 8,000 safety-modified model repositories on hugging face alone, with modified models complying with unsafe requests at rates of 74% compared to 19% for their original instruction-tuned counterparts. for organizations deploying open-weight models, a critical question emerges: how do you know the mo...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 17,
+      "source_url": "https://github.com/GoogleCloudPlatform/activation-model-scanner",
+      "quote": "Thresholds: PASS (>3.5σ), WARNING (2.0–3.5σ), CRITICAL (<2.0σ)",
+      "locator": "Tier 1 heading",
+      "status": "valid",
+      "context": "...ure check** (no baseline required) * measures whether the model has functioning safety directions * thresholds: pass (>3.5σ), warning (2.0–3.5σ), critical (<2.0σ) * catches uncensored models and degraded safety training **tier 2: identity verification** (baselin...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 18,
+      "source_url": "https://arxiv.org/abs/2607.17427",
+      "quote": "abliterated models are systematically more optimistic (+12.2 pp Gemma, +7.4 pp Qwen",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...-2507. three effects replicate across both families (weeks-clustered bootstrap cis excluding zero): abliterated models are systematically more optimistic (+12.2 pp gemma, +7.4 pp qwen; the confirmed preregistered endpoint), justify themselves at greater length, and use fewer explici...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 19,
+      "source_url": "https://arxiv.org/abs/2609.04721",
+      "quote": "harm is cleanly readable at this output, the write site, before the addition",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...t must be read. each layer computes a fresh output that is then added into the residual stream, and harm is cleanly readable at this output, the write site, before the addition. a control that holds the intervention's strength fixed shows that what matters is where the direct...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 19,
+      "source_url": "https://arxiv.org/abs/2609.04721",
+      "quote": "A harm probe trained on a transformer then flags an SSM's harmful inputs",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...gns one model's representation space with another's, so the two genuinely share the representation. a harm probe trained on a transformer then flags an ssm's harmful inputs, and removing the aligned direction makes a model answer attacks it would otherwise refuse, while a...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 20,
+      "source_url": "https://temperaturezero.com/2026/06/14/abliteration-removes-truth/",
+      "quote": "You lose six points of factual accuracy regardless.",
+      "locator": "Article body",
+      "status": "valid",
+      "context": "...s intrinsic to removing the refusal direction at all. it doesn't matter how carefully you erase it. you lose six points of factual accuracy regardless. this is not a quality-of-implementation problem. it is a theory problem. and the theory that broke ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 20,
+      "source_url": "https://temperaturezero.com/2026/06/14/abliteration-removes-truth/",
+      "quote": "The remaining 88% of abliteration's cost on TruthfulQA is intrinsic to removing the refusal direction at all.",
+      "locator": "Article body",
+      "status": "valid",
+      "context": "...ost of the loss. that was the theory. the result was that better engineering closed 12% of the gap. the remaining 88% of abliteration's cost on truthfulqa is intrinsic to removing the refusal direction at all. it doesn't matter how carefully you erase it. you lose six points of factual accuracy regardless. t...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 21,
+      "source_url": "https://arxiv.org/abs/2606.25750",
+      "quote": "scores a target model by measuring whether its hidden states align with these refusal directions under unsafe and jailbreak prompts",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...model, then selects stable layer windows where safe and unsafe behaviors are separable, and finally scores a target model by measuring whether its hidden states align with these refusal directions under unsafe and jailbreak prompts. the resulting metric, **ras** (**r**efusal **a**lignment **s**core), maps representation-level ref...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 21,
+      "source_url": "https://arxiv.org/abs/2606.25750",
+      "quote": "maps representation-level refusal alignment to a calibrated 0-100 safety score",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "... unsafe and jailbreak prompts. the resulting metric, **ras** (**r**efusal **a**lignment **s**core), maps representation-level refusal alignment to a calibrated 0-100 safety score. across `llama`, `gemma`, and `qwen` model families, ras separates aligned models from uncensored a...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 22,
+      "source_url": "https://arxiv.org/abs/2605.21545",
+      "quote": "strict refusal rates span 0.1% to 94.6% on identical prompts",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...three models fail to refuse even these prompts. across 19 frontier models in the may 2026 snapshot, strict refusal rates span 0.1% to 94.6% on identical prompts. jurisdiction does not predict refusal in this snapshot (mann-whitney u, p = 0.393; eu n = 1, us bi...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 22,
+      "source_url": "https://arxiv.org/abs/2605.21545",
+      "quote": "Strict refusal rate misranks safety calibration: Grok 4.20 achieves the highest tier discrimination (Youden's J = 0.787) while ranking only seventh by overall refusal rate",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...onsistent with a small set of canonical refusal templates rather than case-by-case model reasoning. strict refusal rate misranks safety calibration: grok 4.20 achieves the highest tier discrimination (youden's j = 0.787) while ranking only seventh by overall refusal rate, and claude opus 4.7's j dropped 65% from prior versions with no improvement in dual-use detection....",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 23,
+      "source_url": "https://arxiv.org/abs/2310.01405",
+      "quote": "RepE places population-level representations, rather than neurons or circuits, at the center of analysis",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...ach to enhancing the transparency of ai systems that draws on insights from cognitive neuroscience. repe places population-level representations, rather than neurons or circuits, at the center of analysis, equipping us with novel methods for monitoring and manipulating high-level cognitive phenomena in ...",
+      "match_type": "exact"
+    }
+  ]
+}

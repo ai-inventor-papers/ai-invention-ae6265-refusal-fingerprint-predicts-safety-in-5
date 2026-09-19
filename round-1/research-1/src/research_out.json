@@ -1,0 +1,494 @@
+{
+  "title": "Qwen3 Safety Triad: Activation Evidence Review",
+  "layman_summary": "Web research that fact-checks what is known about Qwen3's base, officially safety-tuned, and community 'abliterated' models, how refusal is computed inside such models, and which quick activation-based safety scores already exist.",
+  "summary": "This research artifact verifies the factual/numeric claims underlying the planned study ('compare Qwen3 base vs official Instruct vs community abliterated models mechanistically; find internal patterns on safety prompts; build a 0- to few-prompt activation-based safety metric for arbitrary Hugging Face models'). Verified facts: (1) Qwen3 released April 29, 2025 with eight Apache-2.0 open-weight models (dense 0.6B/1.7B/4B/8B/14B/32B and MoE 30B-A3B/235B-A22B), 32K-128K context, ~36T pretraining tokens, four-stage post-training; HF metadata confirms Qwen/Qwen3-8B is a fine-tune of Qwen/Qwen3-8B-Base and the abliterated ecosystem exists at scale (e.g., huihui-ai/Huihui-Qwen3-8B-abliterated-v2). (2) Mechanistic prior art: refusal is mediated by a single residual-stream direction across 13 chat models incl. Qwen (arXiv:2406.11717); safety layers sit in contiguous middle layers (arXiv:2408.17003); safety-critical regions are ~3% of parameters (arXiv:2402.05162); harm is readable at each layer's output 'write site' and the safety direction transfers across architectures (arXiv:2609.04721); CAV/SCAV probes quantify per-layer safety concepts (arXiv:2404.12038). (3) The proposed 'new metric' is NOT novel in general form: GradSafe (ACL 2024) detects jailbreak prompts from gradients zero-shot; Google AMS (Apr 2026, Apache-2.0) scans any HF model in 10-40s by sigma-separation of three safety concepts (instruct-tuned 3.8-8.4 sigma, abliterated 3.3, uncensored 1.1-1.3, base ~0.7); RAS/SafeVec (arXiv:2606.25750, Jun 2026) extracts layer-wise refusal directions from a reference model and scores any target model with a calibrated 0-100 Refusal Alignment Score across Llama/Gemma/Qwen. (4) Cautionary evidence: abliteration has off-target effects (arXiv:2607.17427: +7.4pp/+12.2pp optimism on Qwen3-30B-A3B/Gemma-4 decisions; ~6 TruthfulQA points lost intrinsically) and refusal-rate-based scores can misrank models (RefusalBench arXiv:2605.21545: refusal rates 0.1%-94.6%, ranking != discrimination). Gap analysis: a systematic layer-by-layer activation comparison of the exact Qwen3-8B base/Instruct/abliterated triad and a direct calibration of activation-geometry scores against full benchmark refusal rates (SafetyBench 11,435 items / HarmBench / SORRY-Bench 440 items / WildGuard 92K) were not found in this search; per the mech-interp handbook, not-found is not equal to open, and a fresh saturation search is required at write-up time. All 23 sources were fetched and checked; the only tool failure was HTTP 401 on the HF API for Qwen3-8B-Instruct (handled by fallback evidence).",
+  "out_expected_files": {
+    "output": "research_out.json"
+  },
+  "upload_ignore_regexes": [],
+  "answer": "**Verification results for the Qwen3 safety mechanistic-interpretability research plan**\n\n**1. Tool availability (diagnostic step).** All web-tools skill operations (search, fetch, grep through the ability server) executed successfully. The single failure was HTTP 401 on the Hugging Face API endpoint for `Qwen/Qwen3-8B-Instruct`; this was handled by fallback: verifying the official `Qwen/Qwen3-8B` record and the Qwen team's blog directly [3, 1]. The Instruct-named chat checkpoint's existence is corroborated by the HF API evidence produced by the parallel research artifact in this run, but was not independently re-verified here.\n\n**2. The three model families exist as claimed.** Qwen3 was released April 29, 2025, with eight open-weight models: six dense (0.6B, 1.7B, 4B, 8B, 14B, 32B) and two MoE (30B-A3B: 30B total / 3B activated; 235B-A22B: 235B total / 22B activated), all under the Apache 2.0 license; context lengths are 32K for the three smallest dense models and 128K for 8B/14B/32B and both MoE models [1]. Pre-training used ~36 trillion tokens across 119 languages/dialects, and post-training is a four-stage pipeline (long-CoT cold start, reasoning-based RL, thinking-mode fusion, general RL over 20+ tasks) [1]. The Qwen3 Technical Report (arXiv:2505.09388, May 14, 2025) describes the series with parameter scales from 0.6 to 235 billion [2]. On Hugging Face, `Qwen/Qwen3-8B` is the chat model (12.99M downloads, 2,014 likes, Apache-2.0) and its metadata tags it explicitly as a fine-tune of `Qwen/Qwen3-8B-Base` [3]; `Qwen/Qwen3-8B-Base` (442K downloads, Apache-2.0) is the pretrained base model [4]. These correspond to the plan's 'base' and 'official safety-finetuned' variants [1, 3]. Community abliterated models exist at scale: `huihui-ai/Huihui-Qwen3-8B-abliterated-v2` describes itself as 'an uncensored version of Qwen/Qwen3-8B created with abliteration' and 'a crude, proof-of-concept implementation to remove refusals' (Apache-2.0) [5]. An HF search returns many further examples, e.g. `huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF` (788 likes, ~2.83M downloads) and `IamLucif3r/Qwen3-4B-Instruct-2507-Abliterated`, reflecting that the Qwen family has since shipped Qwen3.5/3.8 with the same abliteration pattern [6].\n\n**3. Mechanistic-interpretability facts relevant to the planned analysis.** The foundational result shows refusal 'is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72B parameters in size', including Qwen Chat 1.8B/7B/14B/72B; erasing this single direction from residual-stream activations stops refusal of harmful instructions while adding it elicits refusal on harmless ones [7]. Methodologically, the direction is extracted by difference-in-means and the single most effective vector is selected from |I| x L layer-position candidates on validation sets [7]. The representation-engineering framework (RepE) underlies this: high-level concepts are placed at the center of analysis and can be monitored/manipulated for safety-relevant phenomena such as harmlessness [23]. Complementary localization results: a small set of contiguous middle layers ('safety layers') distinguishes malicious from normal queries, and freezing their gradients preserves security during fine-tuning (ICLR 2025) [14]; safety-critical regions are sparse, about 3% at parameter level and 2.5% at rank level, so removing them destroys safety with little utility loss [15]. On 'patterns in internal computation on safety prompts': harmful content is cleanly readable at each layer's output, the 'write site', before it is added to the residual stream, and a harm probe trained on a transformer flags an SSM's harmful inputs, i.e., the safety representation transfers across architectures while the read site is architecture-specific (arXiv:2609.04721, Sep 2026) [19]. Concept-activation-vector safety probes (SCAV, NeurIPS 2024) quantify safety concepts across layers of seven open LLMs and achieve high attack success when inverted [13].\n\n**4. Full benchmarks versus quick activation-based metrics (prior art for the proposed metric).** Behavioral benchmarks: SafetyBench comprises 11,435 multiple-choice questions across 7 safety categories in Chinese and English (ACL 2024) [8]; HarmBench standardizes red-teaming evaluation with a comparison of 18 attack methods over 33 target LLMs and defenses [9]; SORRY-Bench provides a fine-grained taxonomy of 44 topics with 440 class-balanced unsafe instructions and 20 linguistic augmentations (ICLR 2025) [11]; WildGuard is a one-stop moderation tool built on WildGuardMix (92K labeled examples) and WildGuardTest (5K items) covering 13 risk categories, which reduced measured jailbreak success from 79.8% to 2.4% when deployed as a gate [10]. Few- or zero-prompt activation-based scoring already exists in three forms: GradSafe (ACL 2024) detects jailbreak prompts zero-shot by scrutinizing gradients of safety-critical parameters and outperforms Llama Guard without further training [12]; Google's AMS (Activation-based Model Scanner, Apache-2.0, Apr 2026) scans any Hugging Face-compatible model in 10-40 seconds with no generation, measuring sigma-separation of three concepts (harmful_content, injection_resistance, refusal_capability) at ~35-40% depth; reported separations are 3.8-8.4 sigma for instruction-tuned models (including Qwen), 3.3 sigma for abliterated models (WARNING band 2.0-3.5), 1.1-1.3 sigma for 'uncensored' fine-tunes, and ~0.69-0.7 sigma for base models, with Tier-2 identity verification via direction cosine similarity > 0.7 [16, 17]. The same source cites a 2025 study of 8,000+ safety-modified model repos on Hugging Face with 74% vs 19% compliance rates for modified vs original models [16]. Closest to the proposed metric is RAS/SafeVec (arXiv:2606.25750, Jun 2026): extract layer-wise refusal directions from a safety-aligned reference model, select stable layer windows, score a target model by whether its hidden states align with these directions under unsafe and jailbreak prompts, and map the result to a calibrated 0-100 Refusal Alignment Score; it separates aligned from uncensored and abliterated variants across Llama, Gemma and Qwen families and tracks output-level attack success rate [21].\n\n**5. Contradicting and cautionary evidence.** Abliteration is not a clean surgical removal: a preregistered 21,600-decision study on Gemma-4-26B-A4B-it and Qwen3-30B-A3B-Instruct-2507 found abliterated arms systematically more optimistic (+12.2 pp Gemma, +7.4 pp Qwen), writing longer justifications with fewer uncertainty words, while the confidence effect reversed sign between families; the provenance audit also caught two toolchain contamination channels (mismatched quantizer pair, stale community chat template) that silently altered prompts - a direct warning for any study of community-modified checkpoints [18]. Abliteration also costs capability: even a clean implementation loses about six TruthfulQA points and ~88% of that cost is intrinsic to removing the refusal direction, not implementation sloppiness [20]. Finally, refusal rate - the behavior that refusal-direction metrics proxy - can misrank models: RefusalBench (May 2026) found strict refusal rates spanning 0.1% to 94.6% across 19 frontier models on identical prompts, and the model with the best tier discrimination (Youden's J = 0.787) ranked only seventh by raw refusal rate; nine of 18 models showed a 'hedge-but-help' partial-compliance pattern invisible to binary refusal metrics [22]. Any refusal-alignment safety score inherits this caveat [21, 22]. Per the mechanistic-interpretability handbook (internal, not cited here), activation-level findings are statistical estimates rather than fixed properties, and decodability of an internal signal does not guarantee actionability in output behavior - relevant when claiming a metric evaluates 'safety' rather than 'refusal alignment' [7, 19, 21].\n\n**6. Gap analysis and confidence.** High confidence (verified against primary pages fetched in this run): the Qwen3 model facts, refusal-direction mechanism, benchmark statistics, and the existence and parameters of AMS and RAS as prior art for the metric idea [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 21]. The generic 'new metric' idea (activation-based, 0- to few-prompt, for arbitrary HF models) is already realized at least twice (AMS 2026; RAS 2026) [16, 17, 21], so a paper must position against them. Surviving open space not found in this search: (a) a systematic layer-by-layer activation comparison of the exact Qwen3 (8B) base vs Instruct vs abliterated triad; the closest located items are a Qwen3-0.6B refusal-steering master's thesis and family-generic audits that do not use this triad [19, 21]; (b) directly calibrating an activation-geometry score (sigma or RAS-like) against full-benchmark refusal rates (SafetyBench/HarmBench/SORRY-Bench) across a diverse HF model panel - no such calibration was found [16, 17, 21]; (c) prompt-count ablations (0 vs 1 vs few prompts) and reference-free operation (RAS needs a reference aligned model; AMS does not, but its thresholds rest on 14 configurations) [17, 21]. Confidence that (b)/(c) are unoccupied: medium - searches are never exhaustive, and the field handbook's standing rule applies: not-found-in-search does not equal open. A fresh saturation search at write-up time is required, and any claims about a new metric should be scoped as 'refusal-alignment score calibrated against behavioral benchmarks' rather than 'safety score' [22].",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://qwenlm.github.io/blog/qwen3/",
+      "title": "Qwen3: Think Deeper, Act Faster (Qwen blog)",
+      "summary": "Official Qwen3 release post; verified release date (April 29, 2025), eight open-weight models with sizes, Apache-2.0 license, context lengths (32K/128K), pretraining token count (~36T), 119 languages, and the four-stage post-training pipeline.",
+      "authors": [
+        "Qwen Team"
+      ],
+      "year": 2025,
+      "supporting_passages": [
+        {
+          "quote": "approximately 36 trillion tokens covering 119 languages and dialects",
+          "locator": "Pre-training section"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "url": "https://arxiv.org/abs/2505.09388",
+      "title": "Qwen3 Technical Report",
+      "summary": "arXiv abstract page confirming the report identity (submitted May 14, 2025, 60 authors) and that Qwen3 spans dense and MoE architectures with parameter scales from 0.6 to 235 billion.",
+      "authors": [
+        "An Yang",
+        "et al. (60 authors)"
+      ],
+      "year": 2025,
+      "supporting_passages": [
+        {
+          "quote": "with parameter scales ranging from 0.6 to 235 billion",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+      "title": "Hugging Face API record: Qwen/Qwen3-8B",
+      "summary": "HF API metadata: Qwen3-8B chat model, 12,988,756 downloads, 2,014 likes, Apache-2.0, tagged as a finetune of Qwen3-8B-Base.",
+      "authors": [
+        "Qwen"
+      ],
+      "year": 2025,
+      "supporting_passages": [
+        {
+          "quote": "\"base_model:Qwen/Qwen3-8B-Base\",\"base_model:finetune:Qwen/Qwen3-8B-Base\",\"license:apache-2.0\"",
+          "locator": "tags field"
+        },
+        {
+          "quote": "\"downloads\":12988756",
+          "locator": "downloads field"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B-Base",
+      "title": "Hugging Face API record: Qwen/Qwen3-8B-Base",
+      "summary": "HF API metadata confirming the pretrained base model exists, Apache-2.0, linked to arXiv:2505.09388, 442,094 downloads, 125 likes.",
+      "authors": [
+        "Qwen"
+      ],
+      "year": 2025,
+      "supporting_passages": [
+        {
+          "quote": "\"arxiv:2505.09388\",\"license:apache-2.0\"",
+          "locator": "tags field"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-8B-abliterated-v2",
+      "title": "huihui-ai/Huihui-Qwen3-8B-abliterated-v2 model card",
+      "summary": "Community 'abliterated' (uncensored) Qwen3-8B model: confirms the third member of the planned triad, Apache-2.0, created via the abliteration technique (remove-refusals-with-transformers).",
+      "authors": [
+        "huihui-ai"
+      ],
+      "year": null,
+      "supporting_passages": [
+        {
+          "quote": "This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens.",
+          "locator": "Model card introduction"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "url": "https://huggingface.co/api/models?search=Qwen3-Abliterated&limit=12&full=false",
+      "title": "Hugging Face API search: Qwen3-Abliterated",
+      "summary": "HF API search results showing the scale of the abliterated ecosystem for the Qwen family (e.g., huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF with 788 likes and ~2.83M downloads; 0bserverx Heretic variants; IamLucif3r/Qwen3-4B-Instruct-2507-Abliterated).",
+      "authors": [
+        "Hugging Face"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "\"id\":\"huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF\",\"author\":\"huihui-ai\"",
+          "locator": "first search result"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "url": "https://arxiv.org/abs/2406.11717",
+      "title": "Refusal in Language Models Is Mediated by a Single Direction",
+      "summary": "Foundational mech-interp paper (Arditi et al.): refusal mediated by a one-dimensional residual-stream subspace across 13 open-source chat models up to 72B (including Qwen Chat 1.8B-72B); difference-in-means extraction; erase/add directional interventions; also published at COLM 2025 (DOI 10.52202/079017-4322).",
+      "authors": [
+        "Andy Arditi",
+        "Oscar Obeso",
+        "Aaquib Syed",
+        "Daniel Paleka",
+        "Nina Panickssery",
+        "Wes Gurnee",
+        "Neel Nanda"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72B parameters in size",
+          "locator": "Abstract"
+        },
+        {
+          "quote": "erasing this direction from the model's residual stream activations prevents it from refusing harmful instructions, while adding this direction elicits refusal on even harmless instructions",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "url": "https://arxiv.org/abs/2309.07045",
+      "title": "SafetyBench: Evaluating the Safety of Large Language Models",
+      "summary": "ACL 2024 benchmark: 11,435 multiple-choice questions, 7 safety categories, Chinese and English, tested on 25 LLMs.",
+      "authors": [
+        "Zhexin Zhang",
+        "Leqi Lei",
+        "Lindong Wu",
+        "Rui Sun",
+        "Yongkang Huang",
+        "Chong Long",
+        "Xiao Liu",
+        "Xuanyu Lei",
+        "Jie Tang",
+        "Minlie Huang"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "which comprises 11,435 diverse multiple choice questions spanning across 7 distinct categories of safety concerns",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "url": "https://arxiv.org/abs/2402.04249",
+      "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+      "summary": "Standardized red-teaming evaluation framework (Mazeika et al.); verified large-scale comparison of 18 red teaming methods over 33 target LLMs and defenses.",
+      "authors": [
+        "Mantas Mazeika",
+        "Long Phan",
+        "Xuwang Yin",
+        "Andy Zou",
+        "Zifan Wang",
+        "Norman Mu",
+        "Elham Sakhaee",
+        "Nathaniel Li",
+        "Steven Basart",
+        "Bo Li",
+        "David Forsyth",
+        "Dan Hendrycks"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "we conduct a large-scale comparison of 18 red teaming methods and 33 target LLMs and defenses",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "url": "https://arxiv.org/abs/2406.18495",
+      "title": "WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs",
+      "summary": "NeurIPS 2024 moderation/evaluation tool: WildGuardMix (92K labeled examples) and WildGuardTest (5K items), 13 risk categories; reduces measured jailbreak success from 79.8% to 2.4% as a gate.",
+      "authors": [
+        "Seungju Han",
+        "Kavel Rao",
+        "Allyson Ettinger",
+        "Liwei Jiang",
+        "Bill Yuchen Lin",
+        "Nathan Lambert",
+        "Yejin Choi",
+        "Nouha Dziri"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "we construct WildGuardMix, a large-scale and carefully balanced multi-task safety moderation dataset with 92K labeled examples",
+          "locator": "Abstract"
+        },
+        {
+          "quote": "reducing the success rate of jailbreak attacks from 79.8% to 2.4%",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "url": "https://arxiv.org/abs/2406.14598",
+      "title": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "summary": "Safety-refusal benchmark: fine-grained taxonomy of 44 unsafe topics, 440 class-balanced unsafe instructions, 20 linguistic augmentations (ICLR 2025; authorship per proceedings: Tinghao Xie, Xiangyu Qi, et al.).",
+      "authors": null,
+      "year": 2025,
+      "supporting_passages": [
+        {
+          "quote": "a fine-grained taxonomy of 44 potentially unsafe topics, and 440 class-balanced unsafe instructions",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "url": "https://arxiv.org/abs/2402.13494",
+      "title": "GradSafe: Detecting Jailbreak Prompts for LLMs via Safety-Critical Gradient Analysis",
+      "summary": "ACL 2024: jailbreak-prompt detection from gradients of safety-critical parameters; zero-shot and adaptation settings outperform Llama Guard on ToxicChat and XSTest despite no training data.",
+      "authors": [
+        "Yueqi Xie",
+        "Minghong Fang",
+        "Renjie Pi",
+        "Neil Gong"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "detects jailbreak prompts by scrutinizing the gradients of safety-critical parameters in LLMs",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "url": "https://arxiv.org/abs/2404.12038",
+      "title": "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+      "summary": "SCAV framework (NeurIPS 2024): CAV-based safety concept probes across layers of seven open-source LLMs; reports 99.14% average attack success rate against them under a keyword-matching criterion.",
+      "authors": [
+        "Zhihao Xu",
+        "Ruixuan Huang",
+        "Changyu Chen",
+        "Xiting Wang"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "in our evaluation of seven open-source LLMs, we observe an average attack success rate of 99.14%, based on the classic keyword-matching criterion",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "url": "https://arxiv.org/abs/2408.17003",
+      "title": "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+      "summary": "ICLR 2025 paper locating a small set of contiguous middle 'safety layers' critical for malicious-vs-normal discrimination and proposing SPPFT (fixing their gradients during fine-tuning).",
+      "authors": [
+        "Shen Li",
+        "Liuyi Yao",
+        "Lan Zhang",
+        "Yaliang Li"
+      ],
+      "year": 2025,
+      "supporting_passages": [
+        {
+          "quote": "identifying a small set of contiguous layers in the middle of the model that are crucial for distinguishing malicious queries from normal ones",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "url": "https://arxiv.org/abs/2402.05162",
+      "title": "Assessing the Brittleness of Safety Alignment via Pruning and Low-Rank Modifications",
+      "summary": "Wei et al.: safety-critical regions are sparse (~3% of parameters, ~2.5% of rank); removing them compromises safety with little utility loss, evidencing brittleness of safety alignment.",
+      "authors": [
+        "Boyi Wei",
+        "Kaixuan Huang",
+        "Yangsibo Huang",
+        "Tinghao Xie",
+        "Xiangyu Qi",
+        "Mengzhou Xia",
+        "Prateek Mittal",
+        "Mengdi Wang",
+        "Peter Henderson"
+      ],
+      "year": 2024,
+      "supporting_passages": [
+        {
+          "quote": "the isolated regions we find are sparse, comprising about $3\\%$ at the parameter level and $2.5\\%$ at the rank level",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "url": "https://opensource.googleblog.com/2026/04/introducing-ams-activation-based-model-scanner-for-open-weight-llm-safety-verification.html",
+      "title": "Introducing AMS: Activation-based model scanner for open-weight LLM safety verification (Google Open Source Blog)",
+      "summary": "Google's AMS (Apache-2.0, Apr 2026): scans any HF-compatible model in 10-40 seconds without generation; sigma-separation of 3 safety concepts; separations by model type (instruct-tuned incl. Qwen 3.8-8.4 sigma, abliterated 3.3, uncensored 1.1-1.3, base ~0.69); cites a 2025 study of 8,000+ safety-modified HF repos (74% vs 19% compliance).",
+      "authors": [
+        "Glen Messenger"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "The entire scan completes in a single forward pass per prompt pair, typically 10-40 seconds on GPU hardware.",
+          "locator": "How It Works section"
+        },
+        {
+          "quote": "A 2025 study identified over 8,000 safety-modified model repositories on Hugging Face alone, with modified models complying with unsafe requests at rates of 74% compared to 19% for their original instruction-tuned counterparts.",
+          "locator": "Introduction"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "url": "https://github.com/GoogleCloudPlatform/activation-model-scanner",
+      "title": "AMS - Activation-based Model Scanner (GitHub README)",
+      "summary": "AMS implementation details: Tier-1 thresholds PASS >3.5 sigma / WARNING 2.0-3.5 / CRITICAL <2.0; Tier-2 identity verification via cosine similarity >0.7; three concepts (harmful_content, injection_resistance, refusal_capability); 10-40s scans on A100/L4; based on AASE methodology.",
+      "authors": [
+        "Google Cloud Platform"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "Thresholds: PASS (>3.5σ), WARNING (2.0–3.5σ), CRITICAL (<2.0σ)",
+          "locator": "Tier 1 heading"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "url": "https://arxiv.org/abs/2607.17427",
+      "title": "Abliteration Is Not a Scalpel: Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families",
+      "summary": "Preregistered 21,600-decision study on Gemma-4-26B-A4B-it and Qwen3-30B-A3B-Instruct-2507: abliterated arms are systematically more optimistic, write longer justifications, use fewer uncertainty words; confidence effect reverses sign between families; provenance audit caught two toolchain contamination channels.",
+      "authors": [
+        "Aleksander Fafuła"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "abliterated models are systematically more optimistic (+12.2 pp Gemma, +7.4 pp Qwen",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "url": "https://arxiv.org/abs/2609.04721",
+      "title": "Locating and Steering Refusal Beyond Attention",
+      "summary": "Shows the harm/refusal representation reads cleanly at each layer's output ('write site') before the residual-stream addition and transfers across SSM/transformer/recurrent/hybrid architectures; detector-gated steering lowers jailbreak success.",
+      "authors": [
+        "Preethi Carmel Bosco",
+        "Gopalakrishnan Srinivasan"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "harm is cleanly readable at this output, the write site, before the addition",
+          "locator": "Abstract"
+        },
+        {
+          "quote": "A harm probe trained on a transformer then flags an SSM's harmful inputs",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "url": "https://temperaturezero.com/2026/06/14/abliteration-removes-truth/",
+      "title": "Abliteration Doesn't Just Remove Refusals. It Removes Truth. (TemperatureZero)",
+      "summary": "Secondary analysis of a LessWrong test on Qwen3.5-27B: even a clean abliteration loses ~6 TruthfulQA points; ~88% of the cost is intrinsic to removing the refusal direction, not implementation quality; describes FailSpy abliterator and huihui-ai's industrial-scale use.",
+      "authors": [
+        "Maxim Starkweather"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "You lose six points of factual accuracy regardless.",
+          "locator": "Article body"
+        },
+        {
+          "quote": "The remaining 88% of abliteration's cost on TruthfulQA is intrinsic to removing the refusal direction at all.",
+          "locator": "Article body"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "url": "https://arxiv.org/abs/2606.25750",
+      "title": "RAS: Measuring LLM Safety Through Refusal Alignment",
+      "summary": "Closest published match to the proposed metric: SafeVec extracts layer-wise refusal directions from a safety-aligned reference model, selects stable layer windows, scores target hidden states under unsafe/jailbreak prompts, mapping to a calibrated 0-100 Refusal Alignment Score; validated across Llama, Gemma and Qwen, separating aligned from uncensored and abliterated variants.",
+      "authors": [
+        "Chang-Chieh Huang",
+        "Yan-Lun Chen",
+        "Chia-Mu Yu",
+        "Wei-Bin Lee"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "scores a target model by measuring whether its hidden states align with these refusal directions under unsafe and jailbreak prompts",
+          "locator": "Abstract"
+        },
+        {
+          "quote": "maps representation-level refusal alignment to a calibrated 0-100 safety score",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "url": "https://arxiv.org/abs/2605.21545",
+      "title": "RefusalBench: Why Refusal Rate Misranks Frontier LLMs on Biological Research Prompts",
+      "summary": "Cautionary evidence: strict refusal rates span 0.1% to 94.6% across 19 frontier models on identical prompts; refusal-rate ranking misranks safety calibration (best tier discrimination ranked 7th by refusal rate); 9 of 18 models hedge-but-help.",
+      "authors": [
+        "Lukas Weidener",
+        "Marko Brkić",
+        "Mihailo Jovanović",
+        "Emre Ulgac",
+        "Aakaash Meduri"
+      ],
+      "year": 2026,
+      "supporting_passages": [
+        {
+          "quote": "strict refusal rates span 0.1% to 94.6% on identical prompts",
+          "locator": "Abstract"
+        },
+        {
+          "quote": "Strict refusal rate misranks safety calibration: Grok 4.20 achieves the highest tier discrimination (Youden's J = 0.787) while ranking only seventh by overall refusal rate",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "url": "https://arxiv.org/abs/2310.01405",
+      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+      "summary": "RepE framework (Zou et al.): population-level representations as the analytic unit, with methods for monitoring and manipulating honesty, harmlessness, power-seeking in LLMs - the general basis for activation-based safety monitoring.",
+      "authors": [
+        "Andy Zou",
+        "Long Phan",
+        "Sarah Chen",
+        "James Campbell",
+        "Phillip Guo",
+        "Richard Ren",
+        "Alexander Pan",
+        "Xuwang Yin",
+        "Mantas Mazeika",
+        "Ann-Kathrin Dombrowski",
+        "Shashwat Goel",
+        "Nathaniel Li",
+        "Michael J. Byun",
+        "Zifan Wang",
+        "Alex Mallen",
+        "Steven Basart",
+        "Sanmi Koyejo",
+        "Dawn Song",
+        "Matt Fredrikson",
+        "J. Zico Kolter",
+        "Dan Hendrycks"
+      ],
+      "year": 2023,
+      "supporting_passages": [
+        {
+          "quote": "RepE places population-level representations, rather than neurons or circuits, at the center of analysis",
+          "locator": "Abstract"
+        }
+      ]
+    }
+  ],
+  "follow_up_questions": [
+    "How many prompts do AMS and RAS/SafeVec actually require per model, and do their activation scores rank-order models consistently with full-benchmark refusal rates on SafetyBench/HarmBench/SORRY-Bench across a diverse Hugging Face panel?",
+    "Does the refusal direction found in Qwen3-8B-Instruct survive the 2507 refresh and later Qwen3.5/Qwen3.8 checkpoints, and how does its layer profile differ between base, Instruct, and huihui-style abliterated weights?",
+    "Can a reference-free few-prompt activation score be benchmark-calibrated into an absolute safety estimate despite RefusalBench's evidence that raw refusal rate misranks models - i.e., what is the correlation between refusal-alignment geometry and task-specific tier discrimination (Youden's J)?"
+  ]
+}
