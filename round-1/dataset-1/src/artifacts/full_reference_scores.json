@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "description": "Cross-check reference scores (NOT primary regression targets; those are computed downstream by running the zoo).",
+    "disclaimer": "Entries only for models with published scores; absent zoo models intentionally omitted - never invented.",
+    "notes_updated_at": "2026-09-19T02:38:50+00:00",
+    "nglare_check": "N-GLARE (arXiv 2511.14195, ACL 2026; plan draft cited 2505.15010 - corrected): paper reports latent-separability safety evaluation on Qwen3-4B variants among 40+ models, but no public repo/per-model score table for this small zoo was found on 2026-09-19; no rows added (never invent values). XSTest rows below are computed from repo-shipped automated evaluation labels (model_completions/)."
+  },
+  "datasets": [
+    {
+      "dataset": "reference_scores",
+      "examples": [
+        {
+          "model_repo_id": "xstest-v2:gpt4",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "refusal_rate_unsafe",
+          "value": 0.995,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Computed from repo-shipped automated GPT-4 evaluation labels (final_label). Model not in screening zoo."
+        },
+        {
+          "model_repo_id": "xstest-v2:gpt4",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "compliance_rate_safe",
+          "value": 0.916,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Safe-prompt compliance (= 1 - overrefusal proxy). Automated GPT-4 labels, per XSTest repo."
+        },
+        {
+          "model_repo_id": "xstest-v2:llama2new",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "refusal_rate_unsafe",
+          "value": 1.0,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Computed from repo-shipped automated GPT-4 evaluation labels (final_label). Model not in screening zoo."
+        },
+        {
+          "model_repo_id": "xstest-v2:llama2new",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "compliance_rate_safe",
+          "value": 0.704,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Safe-prompt compliance (= 1 - overrefusal proxy). Automated GPT-4 labels, per XSTest repo."
+        },
+        {
+          "model_repo_id": "xstest-v2:llama2orig",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "refusal_rate_unsafe",
+          "value": 1.0,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Computed from repo-shipped automated GPT-4 evaluation labels (final_label). Model not in screening zoo."
+        },
+        {
+          "model_repo_id": "xstest-v2:llama2orig",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "compliance_rate_safe",
+          "value": 0.404,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Safe-prompt compliance (= 1 - overrefusal proxy). Automated GPT-4 labels, per XSTest repo."
+        },
+        {
+          "model_repo_id": "xstest-v2:mistralguard",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "refusal_rate_unsafe",
+          "value": 0.965,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Computed from repo-shipped automated GPT-4 evaluation labels (final_label). Model not in screening zoo."
+        },
+        {
+          "model_repo_id": "xstest-v2:mistralguard",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "compliance_rate_safe",
+          "value": 0.812,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Safe-prompt compliance (= 1 - overrefusal proxy). Automated GPT-4 labels, per XSTest repo."
+        },
+        {
+          "model_repo_id": "xstest-v2:mistralinstruct",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "refusal_rate_unsafe",
+          "value": 0.36,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Computed from repo-shipped automated GPT-4 evaluation labels (final_label). Model not in screening zoo."
+        },
+        {
+          "model_repo_id": "xstest-v2:mistralinstruct",
+          "benchmark": "XSTest-EN v2 (450 prompts)",
+          "metric": "compliance_rate_safe",
+          "value": 0.984,
+          "source_url": "https://github.com/paul-rottger/xstest/tree/main/model_completions",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "medium",
+          "note": "Safe-prompt compliance (= 1 - overrefusal proxy). Automated GPT-4 labels, per XSTest repo."
+        },
+        {
+          "model_repo_id": "n-glare-context",
+          "benchmark": "N-GLARE (arXiv 2511.14195, ACL 2026)",
+          "metric": "context",
+          "value": null,
+          "source_url": "https://arxiv.org/html/2511.14195v2",
+          "collected_at": "2026-09-19T02:29:43+00:00",
+          "confidence": "high",
+          "note": "N-GLARE evaluates safety via latent non-generative classifiers; no per-model zoo refusal scores released. Paper observes geometric separation between Qwen3-4B base/RL-aligned/safety-removed variants - same design as this screen."
+        }
+      ]
+    }
+  ]
+}

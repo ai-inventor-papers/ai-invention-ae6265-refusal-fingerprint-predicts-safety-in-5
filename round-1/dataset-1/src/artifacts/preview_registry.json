@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "description": "Live-verified model registry for safety screening (folds screen/reserved never mixed)",
+    "verified_at": "2026-09-19T02:33:57+00:00",
+    "fold_rule": "screen = zoo + community abliterated + self-ablit grid; reserved = Qwen3-8B pair + 1 community abliterated + alpha=0.35 spec",
+    "qwen3_naming_note": "Verified 2026-09-19: 'Qwen/Qwen3-{size}-Instruct' repo ids are gone (404 with token). Current official naming: 'Qwen/Qwen3-{size}' = instruct (card base_model: Qwen3-{size}-Base, README has /think + e...",
+    "community_abliterated_family_availability": {
+      "qwen3": {
+        "registered": [
+          "huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2",
+          "huihui-ai/Huihui-Qwen3-1.7B-abliterated-v2",
+          "huihui-ai/Huihui-Qwen3-4B-Instruct-2507-abliterated"
+        ],
+        "note": "available"
+      },
+      "qwen2.5": {
+        "registered": [
+          "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-SFT",
+          "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3"
+        ],
+        "note": "available"
+      },
+      "llama3.2": {
+        "registered": [
+          "mylesgoose/Llama-3.2-1B-Instruct-abliterated",
+          "mylesgoose/Llama-3.2-1B-Instruct-abliterated2",
+          "mylesgoose/Llama-3.2-1B-Instruct-abliterated2-Q8_0-GGUF"
+        ],
+        "note": "available"
+      },
+      "gemma2": {
+        "registered": [
+          "IlyaGusev/gemma-2-2b-it-abliterated"
+        ],
+        "note": "available"
+      }
+    },
+    "params_backfilled_at": "2026-09-19T02:34:56+00:00"
+  },
+  "datasets": [
+    {
+      "dataset": "model_registry_v1",
+      "examples": [
+        {
+          "input": "Qwen/Qwen3-0.6B-Base",
+          "output": "0.6B base (Qwen3)",
+          "metadata_repo_id": "Qwen/Qwen3-0.6B-Base",
+          "metadata_family": "qwen3",
+          "metadata_size_label": "0.6B",
+          "metadata_variant_type": "base",
+          "metadata_fold": "screen",
+          "metadata_gated": null,
+          "metadata_requires_hf_token": false,
+          "metadata_weight_format": "safetensors",
+          "metadata_license": "apache-2.0",
+          "metadata_num_layers": 28,
+          "metadata_hidden_size": 1024,
+          "metadata_intermediate_size": 3072,
+          "metadata_num_attention_heads": 16,
+          "metadata_num_key_value_heads": 8,
+          "metadata_architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "metadata_chat_format": "raw",
+          "metadata_parameter_count": 596049920,
+          "metadata_usable_for_activation_hooks": true,
+          "metadata_config_verified": true,
+          "metadata_has_safetensors_index": false,
+          "metadata_source_url": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+          "metadata_verified_at": "2026-09-19T02:32:48+00:00",
+          "metadata_inference_note": "raw continuation (no chat template)"
+        },
+        {
+          "input": "Qwen/Qwen3-0.6B",
+          "output": "0.6B instruct (Qwen3)",
+          "metadata_repo_id": "Qwen/Qwen3-0.6B",
+          "metadata_family": "qwen3",
+          "metadata_size_label": "0.6B",
+          "metadata_variant_type": "instruct",
+          "metadata_fold": "screen",
+          "metadata_gated": null,
+          "metadata_requires_hf_token": false,
+          "metadata_weight_format": "safetensors",
+          "metadata_license": "apache-2.0",
+          "metadata_num_layers": 28,
+          "metadata_hidden_size": 1024,
+          "metadata_intermediate_size": 3072,
+          "metadata_num_attention_heads": 16,
+          "metadata_num_key_value_heads": 8,
+          "metadata_architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "metadata_chat_format": "chatml",
+          "metadata_parameter_count": 751632384,
+          "metadata_usable_for_activation_hooks": true,
+          "metadata_config_verified": true,
+          "metadata_has_safetensors_index": false,
+          "metadata_source_url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+          "metadata_verified_at": "2026-09-19T02:32:48+00:00",
+          "metadata_inference_note": "apply_chat_template; single fixed minimal system prompt; user content only"
+        },
+        {
+          "input": "Qwen/Qwen3-1.7B-Base",
+          "output": "1.7B base (Qwen3)",
+          "metadata_repo_id": "Qwen/Qwen3-1.7B-Base",
+          "metadata_family": "qwen3",
+          "metadata_size_label": "1.7B",
+          "metadata_variant_type": "base",
+          "metadata_fold": "screen",
+          "metadata_gated": null,
+          "metadata_requires_hf_token": false,
+          "metadata_weight_format": "safetensors",
+          "metadata_license": "apache-2.0",
+          "metadata_num_layers": 28,
+          "metadata_hidden_size": 2048,
+          "metadata_intermediate_size": 6144,
+          "metadata_num_attention_heads": 16,
+          "metadata_num_key_value_heads": 8,
+          "metadata_architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "metadata_chat_format": "raw",
+          "metadata_parameter_count": 1720574976,
+          "metadata_usable_for_activation_hooks": true,
+          "metadata_config_verified": true,
+          "metadata_has_safetensors_index": false,
+          "metadata_source_url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+          "metadata_verified_at": "2026-09-19T02:32:48+00:00",
+          "metadata_inference_note": "raw continuation (no chat template)"
+        }
+      ]
+    }
+  ]
+}
