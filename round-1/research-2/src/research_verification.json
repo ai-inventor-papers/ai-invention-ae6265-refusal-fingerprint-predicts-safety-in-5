@@ -1,0 +1,145 @@
+{
+  "valid": true,
+  "file_errors": [],
+  "schema_errors": [],
+  "content_warnings": [],
+  "files_found": {
+    "research_out.json": {
+      "exists": true,
+      "path": "/ai-inventor/aii_data/runs/run_fEjgpc8BQoQS/3_invention_loop/iter_1/gen_art/gen_art_research_2/research_out.json",
+      "source_count": 44,
+      "size": 42679
+    }
+  },
+  "source_count": 44,
+  "checked_at": "2026-09-19T02:41:20.930379+00:00",
+  "passage_check_scope": "Case/whitespace-normalized text occurrence at the source URL (or archive fallback). Not claim entailment, locator verification, or author/year verification. status=error means unverified, not a misquotation.",
+  "passages": [
+    {
+      "source_index": 6,
+      "source_url": "https://github.com/QwenLM/Qwen3",
+      "quote": "available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B",
+      "locator": "Qwen3 (aka Qwen3-2504) section, dense/MoE model list",
+      "status": "valid",
+      "context": "...e highlights from qwen3 include: * **dense and mixture-of-experts (moe) models of various sizes** , available in 0.6b, 1.7b, 4b, 8b, 14b, 32b and 30b-a3b, 235b-a22b. * **seamless switching between thinking mode** (for complex logical reasoning, math, and coding) a...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 7,
+      "source_url": "https://qwenlm.github.io/blog/qwen3/",
+      "quote": "Qwen3 models introduce a hybrid approach to problem-solving.",
+      "locator": "Key Features — Hybrid Thinking Modes",
+      "status": "valid",
+      "context": "...([chat.qwen.ai](https://chat.qwen.ai)) and mobile app! ## key features# * **hybrid thinking modes** qwen3 models introduce a hybrid approach to problem-solving. they support two modes: 1. thinking mode: in this mode, the model takes time to reason step by step...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://huggingface.co/Qwen/Qwen3-4B/raw/main/README.md",
+      "quote": "enable_thinking=True # Switches between thinking and non-thinking modes. Default is True.",
+      "locator": "code example",
+      "status": "valid",
+      "context": "...ompt} ] text = tokenizer.apply_chat_template( messages, tokenize=false, add_generation_prompt=true, enable_thinking=true # switches between thinking and non-thinking modes. default is true. ) model_inputs = tokenizer([text], return_tensors=\"pt\").to(model.device) # conduct text completion ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://huggingface.co/Qwen/Qwen3-4B/raw/main/README.md",
+      "quote": "In this mode, the model will generate think content wrapped in a",
+      "locator": "## Switching Between Thinking and Non-Thinking Mode (full sentence: '...wrapped in a ` thinking... response` block, followed by the final response.')",
+      "status": "valid",
+      "context": "..._generation_prompt=true, enable_thinking=true # true is the default value for enable_thinking ) ``` in this mode, the model will generate think content wrapped in a `...` block, followed by the final response. > [!note] > for thinking mode, use `temperature=0.6`, ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://huggingface.co/Qwen/Qwen3-4B/raw/main/README.md",
+      "quote": "**DO NOT use greedy decoding**, as it can lead to performance degradation and endless repetitions.",
+      "locator": "thinking-mode sampling note",
+      "status": "valid",
+      "context": "...ature=0.6`, `topp=0.95`, `topk=20`, and `minp=0` (the default setting in `generation_config.json`). **do not use greedy decoding**, as it can lead to performance degradation and endless repetitions. for more detailed guidance, please refer to the [best practices](#best-practices) section. ### `ena...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 9,
+      "source_url": "https://huggingface.co/Qwen/Qwen3-0.6B/resolve/main/tokenizer_config.json",
+      "quote": "enable_thinking is defined and enable_thinking is false",
+      "locator": "chat_template jinja, add_generation_prompt branch",
+      "status": "valid",
+      "context": "...if %}\\n{%- endfor %}\\n{%- if add_generation_prompt %}\\n {{- '<|im_start|>assistant\\\\\\n' }}\\n {%- if enable_thinking is defined and enable_thinking is false %}\\n {{- '\\\\\\n\\\\\\n\\\\\\n\\\\\\n' }}\\n {%- endif %}\\n{%- endif %}\", \"clean_up_tokenization_spaces\": false...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 26,
+      "source_url": "https://huggingface.co/Miiyamoto255/SimplyAI-2B-Uncensored/resolve/main/tokenizer_config.json",
+      "quote": "{{ bos_token }}{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}",
+      "locator": "chat_template field (start)",
+      "status": "valid",
+      "context": "...se, \"rstrip\": false, \"single_word\": false, \"special\": false } }, \"bos_token\": \"\", \"chat_template\": \"{{ bos_token }}{% if messages[0]['role'] == 'system' %}{{ raise_exception('system role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 31,
+      "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2/raw/main/README.md",
+      "quote": "This is an uncensored version of [Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B) created with abliteration (see [remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers) to know more about it).",
+      "locator": "model card body",
+      "status": "valid",
+      "context": "...qwen3-4b tags: \\- chat \\- abliterated \\- uncensored \\--- # huihui-ai/huihui-qwen3-4b-abliterated-v2 this is an uncensored version of [qwen/qwen3-4b](https://huggingface.co/qwen/qwen3-4b) created with abliteration (see [remove-refusals-with-transformers](https://github.com/sumandora/remove-refusals-with-transformers) to know more about it). this is a crude, proof-of-concept implementation to remove refusals from an llm model without using...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 31,
+      "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2/raw/main/README.md",
+      "quote": "Ablation was performed using a new and faster method, which yields better results.",
+      "locator": "model card body",
+      "status": "valid",
+      "context": "...proof-of-concept implementation to remove refusals from an llm model without using transformerlens. ablation was performed using a new and faster method, which yields better results. **important note** this version is an improvement over the previous one [huihui-ai/qwen3-4b-abliter...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 31,
+      "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2/raw/main/README.md",
+      "quote": "Changed the 0 layer to eliminate the problem of garbled codes",
+      "locator": "model card body",
+      "status": "valid",
+      "context": "...(https://huggingface.co/huihui-ai/qwen3-4b-abliterated). the ollama version has also been modified. changed the 0 layer to eliminate the problem of garbled codes ## ollama you can use [huihui_ai/qwen3-abliterated:4b-v2](https://ollama.com/huihui_ai/qwen3-ablite...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 33,
+      "source_url": "https://huggingface.co/huihui-ai/Qwen3-1.7B-abliterated",
+      "quote": "You need to agree to share your contact information to access this model",
+      "locator": "gating banner (search-indexed page text)",
+      "status": "valid",
+      "context": "...wen3-1.7b-abliterated) to use this model in llama.cpp, ollama, lm studio, or any compatible app. ## you need to agree to share your contact information to access this model this repository is publicly accessible, but you have to accept the conditions to access its files a...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 42,
+      "source_url": "https://arxiv.org/html/2511.14195",
+      "quote": "when comparing multiple variants of the same base model (e.g., RL-aligned, base, and safety-removed versions of Qwen3-4B), we observe that better-aligned variants exhibit more pronounced geometric separation between different trajectories in latent space.",
+      "locator": "Figure 1 caption",
+      "status": "valid",
+      "context": "...e power of large-scale red teaming at a fraction of the cost. figure 1 supports the core intuition: when comparing multiple variants of the same base model (e.g., rl-aligned, base, and safety-removed versions of qwen3-4b), we observe that better-aligned variants exhibit more pronounced geometric separation between different trajectories in latent space. experiments on over 40 models and 20 red-teaming strategies demonstrate that n-glare faithfully rep...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 42,
+      "source_url": "https://arxiv.org/html/2511.14195",
+      "quote": "Experiments on over 40 models and 20 red teaming strategies demonstrate that the JSS metric exhibits high consistency with Red Teaming safety rankings at less than 1% token and runtime cost.",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...trajectory) of latent representations and introducing the jss (jensen-shannon separability) metric. experiments on over 40 models and 20 red teaming strategies demonstrate that the jss metric exhibits high consistency with red teaming safety rankings at less than 1% token and runtime cost. ## 1 introduction large language models must be aligned to ensure their behavior consistently follo...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 43,
+      "source_url": "https://aclanthology.org/2024.naacl-long.301.pdf",
+      "quote": "We test the state-of-the-art LLMs",
+      "locator": "Section 4.1 Model Setup (full sentence lists Llama2, Mistral-7B and GPT-4)",
+      "status": "valid",
+      "context": "...ting models with xstest 4.1 model setup xstest can be used to test any generative lan- guage model. we test the state-of-the-art llms llama2 (touvron et al., 2023), mistral-7b (jiang et al., 2023) and gpt-4 (openai, 2023). llama2 is ...",
+      "match_type": "exact"
+    }
+  ]
+}
